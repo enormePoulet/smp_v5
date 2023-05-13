@@ -944,6 +944,41 @@
           "src/main/java/net/mcreator/smpmodv/block/model/SnaildensignDisplayModel.java"
         ]
       }
+    },
+    {
+      "name": "Snaildensignproc",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snaildensignproc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/SnaildensignprocProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
