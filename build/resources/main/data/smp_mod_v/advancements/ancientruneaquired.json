@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:sculk"
+    },
+    "title": {
+      "translate": "advancements.ancientruneaquired.title"
+    },
+    "description": {
+      "translate": "advancements.ancientruneaquired.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "ancientruneaquired": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "smp_mod_v:ancientrune"
+            ],
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "parent": "minecraft:adventure/kill_mob_near_sculk_catalyst"
+}

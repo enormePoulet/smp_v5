@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:flowering_azalea_leaves"
+      "item": "minecraft:sculk_sensor"
     },
     "title": {
       "translate": "advancements.quest_4.title"

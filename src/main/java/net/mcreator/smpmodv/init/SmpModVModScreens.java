@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import net.mcreator.smpmodv.client.gui.TrchstguiScreen;
 import net.mcreator.smpmodv.client.gui.SqueezerGUIScreen;
 import net.mcreator.smpmodv.client.gui.AlchemytableguiScreen;
 
@@ -21,6 +22,7 @@ public class SmpModVModScreens {
 		event.enqueueWork(() -> {
 			MenuScreens.register(SmpModVModMenus.SQUEEZER_GUI.get(), SqueezerGUIScreen::new);
 			MenuScreens.register(SmpModVModMenus.ALCHEMYTABLEGUI.get(), AlchemytableguiScreen::new);
+			MenuScreens.register(SmpModVModMenus.TRCHSTGUI.get(), TrchstguiScreen::new);
 		});
 	}
 }

@@ -3,9 +3,9 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Quest 4",
-    "achievementDescription": "escort the traveler to the snail lake",
+    "achievementDescription": "bring back the treasure to the traveler",
     "achievementIcon": {
-      "value": "Blocks.FLOWERING_AZALEA_LEAVES"
+      "value": "Blocks.SCULK_SENSOR"
     },
     "background": "Default",
     "disableDisplay": false,

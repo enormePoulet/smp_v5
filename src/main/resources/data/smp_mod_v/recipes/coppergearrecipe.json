@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "smp_mod_v:coppernugget"
+    },
+    "1": {
+      "item": "minecraft:copper_ingot"
+    },
+    "2": {
+      "item": "smp_mod_v:coppernugget"
+    },
+    "3": {
+      "item": "minecraft:copper_ingot"
+    },
+    "5": {
+      "item": "minecraft:copper_ingot"
+    },
+    "6": {
+      "item": "smp_mod_v:coppernugget"
+    },
+    "7": {
+      "item": "minecraft:copper_ingot"
+    },
+    "8": {
+      "item": "smp_mod_v:coppernugget"
+    }
+  },
+  "result": {
+    "item": "smp_mod_v:coppergear",
+    "count": 2
+  }
+}

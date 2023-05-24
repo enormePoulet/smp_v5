@@ -1,0 +1,99 @@
+---- Minecraft Crash Report ----
+// Uh... Did I do that?
+
+Time: 2023-05-16 22:28:12
+Description: Exception in server tick loop
+
+java.lang.OutOfMemoryError: Java heap space
+	at java.util.concurrent.CompletableFuture.bipush(CompletableFuture.java:1241) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture.andTree(CompletableFuture.java:1522) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture.andTree(CompletableFuture.java:1517) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture.andTree(CompletableFuture.java:1517) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture.andTree(CompletableFuture.java:1517) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture.andTree(CompletableFuture.java:1519) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture.andTree(CompletableFuture.java:1517) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture.andTree(CompletableFuture.java:1517) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture.andTree(CompletableFuture.java:1519) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture.andTree(CompletableFuture.java:1519) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture.allOf(CompletableFuture.java:2419) ~[?:?] {}
+	at net.minecraft.Util.sequence(Util.java:391) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading}
+	at net.minecraft.server.level.ChunkMap.getChunkRangeFuture(ChunkMap.java:292) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading}
+	at net.minecraft.server.level.ChunkMap.scheduleChunkGeneration(ChunkMap.java:609) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading}
+	at net.minecraft.server.level.ChunkMap.schedule(ChunkMap.java:545) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading}
+	at net.minecraft.server.level.ChunkHolder.getOrScheduleFuture(ChunkHolder.java:274) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading}
+	at net.minecraft.server.level.ChunkMap.getChunkRangeFuture(ChunkMap.java:286) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading}
+	at net.minecraft.server.level.ChunkMap.prepareAccessibleChunk(ChunkMap.java:743) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading}
+	at net.minecraft.server.level.ChunkHolder.updateFutures(ChunkHolder.java:376) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading}
+	at net.minecraft.server.level.DistanceManager.lambda$runAllUpdates$0(DistanceManager.java:124) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading}
+	at net.minecraft.server.level.DistanceManager$$Lambda$7587/0x0000000801bdfd78.accept(Unknown Source) ~[?:?] {}
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?] {}
+	at net.minecraft.server.level.DistanceManager.runAllUpdates(DistanceManager.java:123) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerChunkCache.runDistanceManagerUpdates(ServerChunkCache.java:271) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.pollTask(ServerChunkCache.java:539) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerChunkCache.pollTask(ServerChunkCache.java:267) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:751) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:740) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:104) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:725) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.prepareLevels(MinecraftServer.java:447) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:302) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:accesstransformer:B}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.2
+	Minecraft Version ID: 1.19.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.5, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 990416 bytes (0 MiB) / 2090860544 bytes (1994 MiB) up to 2090860544 bytes (1994 MiB)
+	CPUs: 4
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i3-1005G1 CPU @ 1.20GHz
+	Identifier: Intel64 Family 6 Model 126 Stepping 5
+	Graphics card #0 name: Intel(R) UHD Graphics
+	Graphics card #0 vendor: Intel Corporation (0x8086)
+	Graphics card #0 VRAM (MB): 1024.00
+	Graphics card #0 deviceId: 0x8a56
+	Graphics card #0 versionInfo: DriverVersion=26.20.100.7372
+	Virtual memory max (MB): 25377.68
+	Virtual memory used (MB): 13833.70
+	Swap memory total (MB): 17408.00
+	Swap memory used (MB): 1419.79
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	Server Running: true
+	Player Count: 0 / 8; []
+	Data Packs: vanilla, mod:forge, mod:smp_mod_v, mod:geckolib3 (incompatible)
+	World Generation: Experimental
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Launched Version: MOD_DEV
+	ModLauncher: 10.0.8+10.0.8+main.0ef7e830
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.3.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.8.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.|Minecraft                     |minecraft                     |1.19.2              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		                                                  |Forge                         |forge                         |43.2.0              |DONE      |Manifest: NOSIGNATURE
+		main                                              |smp_mod_v2                    |smp_mod_v                     |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		geckolib-forge-1.19-3.1.40_mapped_official_1.19.2.|GeckoLib                      |geckolib3                     |3.1.40              |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: f6b1444d-bc3b-4cbf-b223-43d8d4ec2593
+	FML: 43.2
+	Forge: net.minecraftforge:43.2.0

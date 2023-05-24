@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:oxidized_copper"
+    },
+    "1": {
+      "item": "smp_mod_v:coppergear"
+    },
+    "2": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "smp_mod_v:copperarmorright_leggings",
+    "count": 1
+  }
+}

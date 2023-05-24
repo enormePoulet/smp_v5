@@ -1,0 +1,184 @@
+---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 2023-05-15 18:29:29
+Description: Rendering screen
+
+java.lang.OutOfMemoryError: Java heap space
+	at jdk.internal.misc.Unsafe.allocateUninitializedArray(Unsafe.java:1375) ~[?:?] {}
+	at java.lang.StringConcatHelper.newArray(StringConcatHelper.java:494) ~[?:?] {}
+	at java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(DirectMethodHandle$Holder) ~[?:?] {}
+	at java.lang.invoke.LambdaForm$MH/0x0000000800d8d000.invoke(LambdaForm$MH) ~[?:?] {}
+	at java.lang.invoke.Invokers$Holder.linkToTargetMethod(Invokers$Holder) ~[?:?] {}
+	at com.mojang.blaze3d.vertex.VertexBuffer._drawWithShader(VertexBuffer.java:124) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at com.mojang.blaze3d.vertex.VertexBuffer.drawWithShader(VertexBuffer.java:116) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at com.mojang.blaze3d.vertex.BufferUploader._drawWithShader(BufferUploader.java:39) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at com.mojang.blaze3d.vertex.BufferUploader.drawWithShader(BufferUploader.java:31) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.GuiComponent.innerFill(GuiComponent.java:96) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.GuiComponent.fill(GuiComponent.java:66) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.LevelLoadingScreen.renderChunks(LevelLoadingScreen.java:105) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.LevelLoadingScreen.render(LevelLoadingScreen.java:79) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraftforge.client.ForgeHooksClient.drawScreenInternal(ForgeHooksClient.java:440) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23187%23194!/:?] {re:classloading}
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:433) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23187%23194!/:?] {re:classloading}
+	at net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:896) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1115) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.doWorldLoad(Minecraft.java:2022) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.lambda$doLoadLevel$6(WorldOpenFlows.java:174) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows$$Lambda$7633/0x0000000801b4ead0.accept(Unknown Source) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?] {}
+	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:90) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:754) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2191) ~[?:?] {}
+	at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.doLoadLevel(WorldOpenFlows.java:172) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.doLoadLevel(WorldOpenFlows.java:136) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadLevel(WorldOpenFlows.java:58) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.loadWorld(WorldSelectionList.java:586) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.joinWorld(WorldSelectionList.java:448) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.mouseClicked(WorldSelectionList.java:375) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:899) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+-- Screen render details --
+Details:
+	Screen name: net.minecraft.client.gui.screens.LevelLoadingScreen
+	Mouse location: Scaled: (389, 78). Absolute: (1556.000000, 315.000000)
+	Screen size: Scaled: (480, 251). Absolute: (1920, 1001). Scale factor of 4.000000
+Stacktrace:
+	at net.minecraft.client.renderer.GameRenderer.render(GameRenderer.java:899) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1115) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.doWorldLoad(Minecraft.java:2022) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.lambda$doLoadLevel$6(WorldOpenFlows.java:174) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:718) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:482) ~[?:?] {}
+	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:90) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:754) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735) ~[?:?] {}
+	at java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2191) ~[?:?] {}
+	at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.doLoadLevel(WorldOpenFlows.java:172) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.doLoadLevel(WorldOpenFlows.java:136) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.WorldOpenFlows.loadLevel(WorldOpenFlows.java:58) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.loadWorld(WorldSelectionList.java:586) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.joinWorld(WorldSelectionList.java:448) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.worldselection.WorldSelectionList$WorldListEntry.mouseClicked(WorldSelectionList.java:375) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.components.AbstractSelectionList.mouseClicked(AbstractSelectionList.java:336) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.components.events.ContainerEventHandler.mouseClicked(ContainerEventHandler.java:28) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHandler.lambda$onPress$0(MouseHandler.java:88) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screens.Screen.wrapScreenError(Screen.java:522) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHandler.onPress(MouseHandler.java:85) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.MouseHandler.lambda$setup$4(MouseHandler.java:185) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.util.thread.BlockableEventLoop.execute(BlockableEventLoop.java:90) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.MouseHandler.lambda$setup$5(MouseHandler.java:184) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:43) ~[lwjgl-glfw-3.3.1.jar%23168!/:build 7] {}
+	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.3.1.jar%23174!/:build 7] {}
+	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3474) ~[lwjgl-glfw-3.3.1.jar%23168!/:build 7] {}
+	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:187) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1146) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.run(Minecraft.java:700) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:accesstransformer:B,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.run(Main.java:212) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:51) ~[forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.jar%23188!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?] {}
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?] {}
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?] {}
+	at java.lang.reflect.Method.invoke(Method.java:568) ~[?:?] {}
+	at net.minecraftforge.fml.loading.targets.ForgeClientUserdevLaunchHandler.lambda$launchService$0(ForgeClientUserdevLaunchHandler.java:25) ~[fmlloader-1.19.2-43.2.0.jar%23101!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-10.0.8.jar%23114!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-10.0.8.jar%23114!/:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-10.0.8.jar%23114!/:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:106) [modlauncher-10.0.8.jar%23114!/:?] {}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:77) [modlauncher-10.0.8.jar%23114!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-10.0.8.jar%23114!/:?] {}
+	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-10.0.8.jar%23114!/:?] {}
+	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) [bootstraplauncher-1.1.2.jar:?] {}
+
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: Default, Mod Resources
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.2
+	Minecraft Version ID: 1.19.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.5, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 1032152 bytes (0 MiB) / 2090860544 bytes (1994 MiB) up to 2090860544 bytes (1994 MiB)
+	CPUs: 4
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i3-1005G1 CPU @ 1.20GHz
+	Identifier: Intel64 Family 6 Model 126 Stepping 5
+	Microarchitecture: Ice Lake (Client)
+	Frequency (GHz): 1.19
+	Number of physical packages: 1
+	Number of physical CPUs: 2
+	Number of logical CPUs: 4
+	Graphics card #0 name: Intel(R) UHD Graphics
+	Graphics card #0 vendor: Intel Corporation (0x8086)
+	Graphics card #0 VRAM (MB): 1024.00
+	Graphics card #0 deviceId: 0x8a56
+	Graphics card #0 versionInfo: DriverVersion=26.20.100.7372
+	Memory slot #0 capacity (MB): 4096.00
+	Memory slot #0 clockSpeed (GHz): 2.67
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 4096.00
+	Memory slot #1 clockSpeed (GHz): 2.67
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 25377.68
+	Virtual memory used (MB): 13845.24
+	Swap memory total (MB): 17408.00
+	Swap memory used (MB): 788.19
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	Launched Version: MOD_DEV
+	Backend library: LWJGL version 3.3.1 build 7
+	Backend API: Intel(R) UHD Graphics GL version 3.2.0 - Build 26.20.100.7372, Intel
+	Window size: 1920x1001
+	GL Caps: Using framebuffer using OpenGL 3.2
+	GL debug messages: 
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Type: Integrated Server (map_client.txt)
+	Graphics mode: fast
+	Resource Packs: 
+	Current Language: English (US)
+	CPU: 4x Intel(R) Core(TM) i3-1005G1 CPU @ 1.20GHz
+	Server Running: true
+	Player Count: 0 / 8; []
+	Data Packs: vanilla, mod:forge, mod:smp_mod_v, mod:geckolib3 (incompatible)
+	World Generation: Experimental
+	ModLauncher: 10.0.8+10.0.8+main.0ef7e830
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.3.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19.2-43.2.0.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.8.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		forge-1.19.2-43.2.0_mapped_official_1.19.2-recomp.|Minecraft                     |minecraft                     |1.19.2              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		                                                  |Forge                         |forge                         |43.2.0              |DONE      |Manifest: NOSIGNATURE
+		main                                              |smp_mod_v2                    |smp_mod_v                     |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		geckolib-forge-1.19-3.1.40_mapped_official_1.19.2.|GeckoLib                      |geckolib3                     |3.1.40              |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: dbe50745-6582-4b52-850c-2560ce225a46
+	FML: 43.2
+	Forge: net.minecraftforge:43.2.0

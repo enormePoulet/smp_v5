@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "smp_mod_v:coppergear"
+    },
+    "1": {
+      "item": "minecraft:copper_ingot"
+    },
+    "2": {
+      "item": "minecraft:oxidized_copper"
+    }
+  },
+  "result": {
+    "item": "smp_mod_v:copperarmorright_chestplate",
+    "count": 1
+  }
+}

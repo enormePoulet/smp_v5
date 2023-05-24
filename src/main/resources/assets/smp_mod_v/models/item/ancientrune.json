@@ -1,0 +1,7 @@
+{
+  "parent": "smp_mod_v:custom/ancient_runes",
+  "textures": {
+    "0": "smp_mod_v:blocks/ancient_rune1",
+    "particle": "smp_mod_v:items/ancient_rune1"
+  }
+}

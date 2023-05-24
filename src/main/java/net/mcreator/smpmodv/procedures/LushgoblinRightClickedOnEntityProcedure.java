@@ -4,12 +4,12 @@ import net.minecraftforge.registries.ForgeRegistries;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.TamableAnimal;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
@@ -354,7 +354,7 @@ public class LushgoblinRightClickedOnEntityProcedure {
 		}
 		if (!(sourceentity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel ? _plr.getAdvancements().getOrStartProgress(_plr.server.getAdvancements().getAdvancement(new ResourceLocation("smp_mod_v:quest_4"))).isDone() : false)) {
 			if (sourceentity.getPersistentData().getBoolean("accepted4") == true) {
-				if (sourceentity.getPersistentData().getBoolean("arrived4") == true) {
+				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == SmpModVModItems.ANCIENTRUNE.get()) {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								"/tellraw @p [\"\",{\"text\":\"[Traveler] \",\"color\":\"#DE6B44\"},{\"text\":\"je te revaudrait ca un de ces jours!\",\"color\":\"black\"}]");
@@ -365,6 +365,13 @@ public class LushgoblinRightClickedOnEntityProcedure {
 							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.celebrate")), SoundSource.NEUTRAL, 3, 1, false);
 						}
 					}
+					if (sourceentity instanceof LivingEntity _entity) {
+						ItemStack _setstack = new ItemStack(Blocks.AIR);
+						_setstack.setCount(1);
+						_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+						if (_entity instanceof Player _player)
+							_player.getInventory().setChanged();
+					}
 					if (sourceentity instanceof ServerPlayer _player) {
 						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("smp_mod_v:quest_4"));
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
@@ -374,17 +381,26 @@ public class LushgoblinRightClickedOnEntityProcedure {
 								_player.getAdvancements().award(_adv, (String) _iterator.next());
 						}
 					}
-					if (entity instanceof TamableAnimal _toTame && entity instanceof Player _owner)
-						_toTame.tame(_owner);
+					SmpModVMod.queueServerWork(20, () -> {
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"/tellraw @a [\"\",{\"text\":\"[Traveler]\",\"color\":\"#DE6B44\"},{\"text\":\"OH! j'allais oubli\u00E9 voila ta r\u00E9compense! je lai trouv\u00E9 en me baladant dans le royaume des nains\",\"color\":\"black\"}]");
+						if (sourceentity instanceof LivingEntity _entity) {
+							ItemStack _setstack = new ItemStack(SmpModVModItems.COPPERCORE.get());
+							_setstack.setCount(1);
+							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+							if (_entity instanceof Player _player)
+								_player.getInventory().setChanged();
+						}
+					});
 				}
 			}
 			if (sourceentity.getPersistentData().getBoolean("accepted4") == false) {
 				if (entity.getPersistentData().getBoolean("quest4") == true) {
-					entity.getPersistentData().putBoolean("quest4b", (false));
 					sourceentity.getPersistentData().putBoolean("accepted4", (true));
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"/tellraw @a [\"\",{\"text\":\"[Traveler] \",\"color\":\"#DE6B44\"},{\"text\":\"h\u00E9ho toi la!\",\"color\":\"black\"}]");
+								"/tellraw @p [\"\",{\"text\":\"[Traveler] \",\"color\":\"#DE6B44\"},{\"text\":\"h\u00E9ho toi la!\",\"color\":\"black\"}]");
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
 							_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.yes")), SoundSource.NEUTRAL, 3, 1);
@@ -395,7 +411,7 @@ public class LushgoblinRightClickedOnEntityProcedure {
 					SmpModVMod.queueServerWork(20, () -> {
 						if (world instanceof ServerLevel _level)
 							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-									"/tellraw @a [\"\",{\"text\":\"[Traveler] \",\"color\":\"#DE6B44\"},{\"text\":\"tu peut m'aider?\",\"color\":\"black\"}]");
+									"/tellraw @p [\"\",{\"text\":\"[Traveler] \",\"color\":\"#DE6B44\"},{\"text\":\"tu peut m'aider?\",\"color\":\"black\"}]");
 						if (world instanceof Level _level) {
 							if (!_level.isClientSide()) {
 								_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.ambient")), SoundSource.NEUTRAL, 3, 1);
@@ -406,7 +422,7 @@ public class LushgoblinRightClickedOnEntityProcedure {
 						SmpModVMod.queueServerWork(20, () -> {
 							if (world instanceof ServerLevel _level)
 								_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-										"/tellraw @a [\"\",{\"text\":\"[Traveler] \",\"color\":\"#DE6B44\"},{\"text\":\"tu peut m'aider?\",\"color\":\"black\"}]");
+										"/tellraw @p [\"\",{\"text\":\"[Traveler]\",\"color\":\"#DE6B44\"},{\"text\":\"je recherche une fragment de rune ancienne! tu pourrais maider a le trouver?\",\"color\":\"black\"}]");
 							if (world instanceof Level _level) {
 								if (!_level.isClientSide()) {
 									_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.yes")), SoundSource.NEUTRAL, 3, 1);
@@ -418,7 +434,7 @@ public class LushgoblinRightClickedOnEntityProcedure {
 								if (world instanceof ServerLevel _level)
 									_level.getServer().getCommands().performPrefixedCommand(
 											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-											"/tellraw @p [\"\",{\"text\":\"[Traveler] \",\"color\":\"#DE6B44\"},{\"text\":\"tu connait? oh merci eh bah montre moi le chemin!\",\"color\":\"black\"}]");
+											"/tellraw @p [\"\",{\"text\":\"[Traveler] \",\"color\":\"#DE6B44\"},{\"text\":\"merci beaucoup!\",\"color\":\"black\"}]");
 								if (world instanceof Level _level) {
 									if (!_level.isClientSide()) {
 										_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.ambient")), SoundSource.NEUTRAL, 3, 1);
@@ -426,22 +442,6 @@ public class LushgoblinRightClickedOnEntityProcedure {
 										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.ambient")), SoundSource.NEUTRAL, 3, 1, false);
 									}
 								}
-								SmpModVMod.queueServerWork(20, () -> {
-									if (world instanceof ServerLevel _level)
-										_level.getServer().getCommands().performPrefixedCommand(
-												new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-												"/tellraw @p [\"\",{\"text\":\"[Traveler] \",\"color\":\"#DE6B44\"},{\"text\":\"je te revaudrait ca un de ces jours!\",\"color\":\"black\"}]");
-									if (world instanceof Level _level) {
-										if (!_level.isClientSide()) {
-											_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.ambient")), SoundSource.NEUTRAL, 3, 1);
-										} else {
-											_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.ambient")), SoundSource.NEUTRAL, 3, 1, false);
-										}
-									}
-									entity.getPersistentData().putBoolean("follow4", (true));
-									if (entity instanceof TamableAnimal _toTame && sourceentity instanceof Player _owner)
-										_toTame.tame(_owner);
-								});
 							});
 						});
 					});

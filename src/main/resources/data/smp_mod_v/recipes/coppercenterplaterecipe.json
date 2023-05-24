@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:copper_ingot"
+    },
+    "2": {
+      "item": "minecraft:copper_ingot"
+    },
+    "3": {
+      "item": "minecraft:copper_block"
+    },
+    "4": {
+      "item": "smp_mod_v:coppercore"
+    },
+    "5": {
+      "item": "minecraft:copper_block"
+    },
+    "6": {
+      "item": "smp_mod_v:coppergear"
+    },
+    "7": {
+      "item": "minecraft:copper_ingot"
+    },
+    "8": {
+      "item": "smp_mod_v:coppergear"
+    }
+  },
+  "result": {
+    "item": "smp_mod_v:coppercenterpiece_chestplate",
+    "count": 1
+  }
+}

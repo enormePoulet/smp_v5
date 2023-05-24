@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:copper_block"
+    },
+    "1": {
+      "item": "smp_mod_v:coppergear"
+    },
+    "2": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "result": {
+    "item": "smp_mod_v:copperarmorleft_leggings",
+    "count": 1
+  }
+}

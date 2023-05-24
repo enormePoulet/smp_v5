@@ -17,6 +17,15 @@ import net.minecraft.world.item.BlockItem;
 import net.mcreator.smpmodv.item.QuesteraserItem;
 import net.mcreator.smpmodv.item.HermitcrabscutItem;
 import net.mcreator.smpmodv.item.GlowberriejuiceItem;
+import net.mcreator.smpmodv.item.CoppernuggetItem;
+import net.mcreator.smpmodv.item.CoppergearItem;
+import net.mcreator.smpmodv.item.CoppercoreItem;
+import net.mcreator.smpmodv.item.CoppercenterpieceItem;
+import net.mcreator.smpmodv.item.CopperarmorrightItem;
+import net.mcreator.smpmodv.item.CopperarmorleftItem;
+import net.mcreator.smpmodv.item.CopperarmorItem;
+import net.mcreator.smpmodv.item.Copperarmor2armsItem;
+import net.mcreator.smpmodv.item.AncientruneItem;
 import net.mcreator.smpmodv.item.AmethystnecklaceItem;
 import net.mcreator.smpmodv.item.AmethystdustItem;
 import net.mcreator.smpmodv.block.display.SqueezerDisplayItem;
@@ -46,6 +55,19 @@ public class SmpModVModItems {
 	public static final RegistryObject<Item> QUEST_4ACTIVATOR = block(SmpModVModBlocks.QUEST_4ACTIVATOR, CreativeModeTab.TAB_BUILDING_BLOCKS);
 	public static final RegistryObject<Item> SNAILDENSIGN = REGISTRY.register(SmpModVModBlocks.SNAILDENSIGN.getId().getPath(),
 			() -> new SnaildensignDisplayItem(SmpModVModBlocks.SNAILDENSIGN.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
+	public static final RegistryObject<Item> ANCIENTRUNE = REGISTRY.register("ancientrune", () -> new AncientruneItem());
+	public static final RegistryObject<Item> COPPERARMOR_HELMET = REGISTRY.register("copperarmor_helmet", () -> new CopperarmorItem.Helmet());
+	public static final RegistryObject<Item> COPPERARMOR_CHESTPLATE = REGISTRY.register("copperarmor_chestplate", () -> new CopperarmorItem.Chestplate());
+	public static final RegistryObject<Item> COPPERARMOR_LEGGINGS = REGISTRY.register("copperarmor_leggings", () -> new CopperarmorItem.Leggings());
+	public static final RegistryObject<Item> COPPERARMORRIGHT_CHESTPLATE = REGISTRY.register("copperarmorright_chestplate", () -> new CopperarmorrightItem.Chestplate());
+	public static final RegistryObject<Item> COPPERARMORRIGHT_LEGGINGS = REGISTRY.register("copperarmorright_leggings", () -> new CopperarmorrightItem.Leggings());
+	public static final RegistryObject<Item> COPPERARMORLEFT_CHESTPLATE = REGISTRY.register("copperarmorleft_chestplate", () -> new CopperarmorleftItem.Chestplate());
+	public static final RegistryObject<Item> COPPERARMORLEFT_LEGGINGS = REGISTRY.register("copperarmorleft_leggings", () -> new CopperarmorleftItem.Leggings());
+	public static final RegistryObject<Item> COPPERCENTERPIECE_CHESTPLATE = REGISTRY.register("coppercenterpiece_chestplate", () -> new CoppercenterpieceItem.Chestplate());
+	public static final RegistryObject<Item> COPPERGEAR = REGISTRY.register("coppergear", () -> new CoppergearItem());
+	public static final RegistryObject<Item> COPPERNUGGET = REGISTRY.register("coppernugget", () -> new CoppernuggetItem());
+	public static final RegistryObject<Item> COPPERCORE = REGISTRY.register("coppercore", () -> new CoppercoreItem());
+	public static final RegistryObject<Item> COPPERARMOR_2ARMS_CHESTPLATE = REGISTRY.register("copperarmor_2arms_chestplate", () -> new Copperarmor2armsItem.Chestplate());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

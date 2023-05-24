@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2"
+  ],
+  "key": {
+    "0": {
+      "item": "smp_mod_v:copperarmorleft_chestplate"
+    },
+    "2": {
+      "item": "smp_mod_v:copperarmorright_chestplate"
+    }
+  },
+  "result": {
+    "item": "smp_mod_v:copperarmor_2arms_chestplate",
+    "count": 1
+  }
+}
