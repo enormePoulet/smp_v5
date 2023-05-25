@@ -14,6 +14,14 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.smpmodv.item.TitaniumingotItem;
+import net.mcreator.smpmodv.item.Titanium_toolsSwordItem;
+import net.mcreator.smpmodv.item.Titanium_toolsShovelItem;
+import net.mcreator.smpmodv.item.Titanium_toolsPickaxeItem;
+import net.mcreator.smpmodv.item.Titanium_toolsHoeItem;
+import net.mcreator.smpmodv.item.Titanium_toolsAxeItem;
+import net.mcreator.smpmodv.item.Titanium_armorArmorItem;
+import net.mcreator.smpmodv.item.TitaniumItem;
 import net.mcreator.smpmodv.item.QuesteraserItem;
 import net.mcreator.smpmodv.item.HermitcrabscutItem;
 import net.mcreator.smpmodv.item.GlowberriejuiceItem;
@@ -68,6 +76,22 @@ public class SmpModVModItems {
 	public static final RegistryObject<Item> COPPERNUGGET = REGISTRY.register("coppernugget", () -> new CoppernuggetItem());
 	public static final RegistryObject<Item> COPPERCORE = REGISTRY.register("coppercore", () -> new CoppercoreItem());
 	public static final RegistryObject<Item> COPPERARMOR_2ARMS_CHESTPLATE = REGISTRY.register("copperarmor_2arms_chestplate", () -> new Copperarmor2armsItem.Chestplate());
+	public static final RegistryObject<Item> TITANIUM_ORE = block(SmpModVModBlocks.TITANIUM_ORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> TITANIUM_BLOCK = block(SmpModVModBlocks.TITANIUM_BLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> TITANIUM = REGISTRY.register("titanium", () -> new TitaniumItem());
+	public static final RegistryObject<Item> DEEPSLATETITANIUMORE = block(SmpModVModBlocks.DEEPSLATETITANIUMORE, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> TITANIUMINGOT = REGISTRY.register("titaniumingot", () -> new TitaniumingotItem());
+	public static final RegistryObject<Item> RAWTITANIUMBLOCK = block(SmpModVModBlocks.RAWTITANIUMBLOCK, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> TITANIUM_ARMOR_ARMOR_HELMET = REGISTRY.register("titanium_armor_armor_helmet", () -> new Titanium_armorArmorItem.Helmet());
+	public static final RegistryObject<Item> TITANIUM_ARMOR_ARMOR_CHESTPLATE = REGISTRY.register("titanium_armor_armor_chestplate", () -> new Titanium_armorArmorItem.Chestplate());
+	public static final RegistryObject<Item> TITANIUM_ARMOR_ARMOR_LEGGINGS = REGISTRY.register("titanium_armor_armor_leggings", () -> new Titanium_armorArmorItem.Leggings());
+	public static final RegistryObject<Item> TITANIUM_ARMOR_ARMOR_BOOTS = REGISTRY.register("titanium_armor_armor_boots", () -> new Titanium_armorArmorItem.Boots());
+	public static final RegistryObject<Item> TITANIUM_TOOLS_AXE = REGISTRY.register("titanium_tools_axe", () -> new Titanium_toolsAxeItem());
+	public static final RegistryObject<Item> TITANIUM_TOOLS_PICKAXE = REGISTRY.register("titanium_tools_pickaxe", () -> new Titanium_toolsPickaxeItem());
+	public static final RegistryObject<Item> TITANIUM_TOOLS_SWORD = REGISTRY.register("titanium_tools_sword", () -> new Titanium_toolsSwordItem());
+	public static final RegistryObject<Item> TITANIUM_TOOLS_SHOVEL = REGISTRY.register("titanium_tools_shovel", () -> new Titanium_toolsShovelItem());
+	public static final RegistryObject<Item> TITANIUM_TOOLS_HOE = REGISTRY.register("titanium_tools_hoe", () -> new Titanium_toolsHoeItem());
+	public static final RegistryObject<Item> QUEST_5ACTIVATOR = block(SmpModVModBlocks.QUEST_5ACTIVATOR, CreativeModeTab.TAB_BUILDING_BLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

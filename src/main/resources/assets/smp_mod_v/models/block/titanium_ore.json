@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "smp_mod_v:blocks/titanium_ore2",
+    "particle": "smp_mod_v:blocks/titanium_ore2"
+  },
+  "render_type": "solid"
+}

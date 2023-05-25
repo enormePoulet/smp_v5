@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "smp_mod_v:items/titanium_tools_shovel"
+  }
+}

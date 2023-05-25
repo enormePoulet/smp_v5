@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "smp_mod_v:titaniumingot"
+    },
+    "1": {
+      "item": "smp_mod_v:titaniumingot"
+    },
+    "2": {
+      "item": "smp_mod_v:titaniumingot"
+    },
+    "3": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "smp_mod_v:titanium_tools_axe",
+    "count": 1
+  }
+}

@@ -3,15 +3,15 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "Quest 5",
-    "achievementDescription": "bring 5 amethyst metal ingot to the tool smith",
+    "achievementDescription": "bring 5 titanium ingot to the tool smith",
     "achievementIcon": {
-      "value": "Blocks.DEEPSLATE_BRICKS"
+      "value": "CUSTOM:Deepslatetitaniumore"
     },
     "background": "Default",
     "disableDisplay": false,
     "showPopup": true,
     "announceToChat": true,
-    "hideIfNotCompleted": false,
+    "hideIfNotCompleted": true,
     "rewardLoot": [],
     "rewardRecipes": [],
     "rewardFunction": "No function",

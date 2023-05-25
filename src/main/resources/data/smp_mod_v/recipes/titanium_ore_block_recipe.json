@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "smp_mod_v:titanium"
+    },
+    "1": {
+      "item": "smp_mod_v:titanium"
+    },
+    "2": {
+      "item": "smp_mod_v:titanium"
+    },
+    "3": {
+      "item": "smp_mod_v:titanium"
+    },
+    "4": {
+      "item": "smp_mod_v:titanium"
+    },
+    "5": {
+      "item": "smp_mod_v:titanium"
+    },
+    "6": {
+      "item": "smp_mod_v:titanium"
+    },
+    "7": {
+      "item": "smp_mod_v:titanium"
+    },
+    "8": {
+      "item": "smp_mod_v:titanium"
+    }
+  },
+  "result": {
+    "item": "smp_mod_v:rawtitaniumblock",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "smp_mod_v:rawtitaniumblock"
+    }
+  ],
+  "result": {
+    "item": "smp_mod_v:titanium",
+    "count": 9
+  }
+}

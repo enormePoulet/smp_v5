@@ -35,6 +35,7 @@ import net.mcreator.smpmodv.init.SmpModVModPotions;
 import net.mcreator.smpmodv.init.SmpModVModMobEffects;
 import net.mcreator.smpmodv.init.SmpModVModMenus;
 import net.mcreator.smpmodv.init.SmpModVModItems;
+import net.mcreator.smpmodv.init.SmpModVModFeatures;
 import net.mcreator.smpmodv.init.SmpModVModEntities;
 import net.mcreator.smpmodv.init.SmpModVModBlocks;
 import net.mcreator.smpmodv.init.SmpModVModBlockEntities;
@@ -62,6 +63,7 @@ public class SmpModVMod {
 		SmpModVModItems.REGISTRY.register(bus);
 		SmpModVModEntities.REGISTRY.register(bus);
 		SmpModVModBlockEntities.REGISTRY.register(bus);
+		SmpModVModFeatures.REGISTRY.register(bus);
 
 		SmpModVModMobEffects.REGISTRY.register(bus);
 		SmpModVModPotions.REGISTRY.register(bus);

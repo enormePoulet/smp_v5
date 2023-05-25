@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "smp_mod_v:titaniumingot"
+    },
+    "2": {
+      "item": "smp_mod_v:titaniumingot"
+    },
+    "3": {
+      "item": "smp_mod_v:titaniumingot"
+    },
+    "4": {
+      "item": "smp_mod_v:titaniumingot"
+    },
+    "5": {
+      "item": "smp_mod_v:titaniumingot"
+    },
+    "6": {
+      "item": "smp_mod_v:titaniumingot"
+    },
+    "7": {
+      "item": "smp_mod_v:titaniumingot"
+    },
+    "8": {
+      "item": "smp_mod_v:titaniumingot"
+    }
+  },
+  "result": {
+    "item": "smp_mod_v:titanium_armor_armor_chestplate",
+    "count": 1
+  }
+}

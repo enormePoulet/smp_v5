@@ -10,7 +10,6 @@ public class Quest4activatorprocProcedure {
 			return;
 		if (entity instanceof LushgoblinEntity) {
 			entity.getPersistentData().putBoolean("quest4", (true));
-			entity.getPersistentData().putBoolean("quest4b", (true));
 		}
 	}
 }

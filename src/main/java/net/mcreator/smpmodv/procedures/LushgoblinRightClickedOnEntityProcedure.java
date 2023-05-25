@@ -372,15 +372,6 @@ public class LushgoblinRightClickedOnEntityProcedure {
 						if (_entity instanceof Player _player)
 							_player.getInventory().setChanged();
 					}
-					if (sourceentity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("smp_mod_v:quest_4"));
-						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
-						if (!_ap.isDone()) {
-							Iterator _iterator = _ap.getRemainingCriteria().iterator();
-							while (_iterator.hasNext())
-								_player.getAdvancements().award(_adv, (String) _iterator.next());
-						}
-					}
 					SmpModVMod.queueServerWork(20, () -> {
 						if (world instanceof ServerLevel _level)
 							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
@@ -391,6 +382,15 @@ public class LushgoblinRightClickedOnEntityProcedure {
 							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
 							if (_entity instanceof Player _player)
 								_player.getInventory().setChanged();
+						}
+						if (sourceentity instanceof ServerPlayer _player) {
+							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("smp_mod_v:quest_4"));
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								Iterator _iterator = _ap.getRemainingCriteria().iterator();
+								while (_iterator.hasNext())
+									_player.getAdvancements().award(_adv, (String) _iterator.next());
+							}
 						}
 					});
 				}
@@ -453,6 +453,99 @@ public class LushgoblinRightClickedOnEntityProcedure {
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							"/tellraw @p [\"\",{\"text\":\"[Traveler] \",\"color\":\"#DE6B44\"},{\"text\":\"bienvenue au bazar des aventuriers! arme, nouriture, armure de tout genre!\",\"color\":\"black\"}]");
+			}
+		}
+		if (!(sourceentity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel ? _plr.getAdvancements().getOrStartProgress(_plr.server.getAdvancements().getAdvancement(new ResourceLocation("smp_mod_v:quest_5"))).isDone() : false)) {
+			if (sourceentity.getPersistentData().getBoolean("accepted5") == true) {
+				if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == SmpModVModItems.TITANIUM.get()) {
+					if (((sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)).getCount() == 15) {
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"/tellraw @p [\"\",{\"text\":\"[Toolsmith]\",\"color\":\"dark_blue\"},{\"text\":\"merci! voila pour toi!\",\"color\":\"black\"}]");
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.pillager.celebrate")), SoundSource.NEUTRAL, 3, 1);
+							} else {
+								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.pillager.celebrate")), SoundSource.NEUTRAL, 3, 1, false);
+							}
+						}
+						if (sourceentity instanceof LivingEntity _entity) {
+							ItemStack _setstack = new ItemStack(Items.NETHERITE_PICKAXE);
+							_setstack.setCount(1);
+							_entity.setItemInHand(InteractionHand.MAIN_HAND, _setstack);
+							if (_entity instanceof Player _player)
+								_player.getInventory().setChanged();
+						}
+						if (sourceentity instanceof ServerPlayer _player) {
+							Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("smp_mod_v:quest_5"));
+							AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
+							if (!_ap.isDone()) {
+								Iterator _iterator = _ap.getRemainingCriteria().iterator();
+								while (_iterator.hasNext())
+									_player.getAdvancements().award(_adv, (String) _iterator.next());
+							}
+						}
+					}
+				}
+			}
+			if (sourceentity.getPersistentData().getBoolean("accepted5") == false) {
+				if (entity.getPersistentData().getBoolean("quest5") == true) {
+					sourceentity.getPersistentData().putBoolean("accepted5", (true));
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"/tellraw @p [\"\",{\"text\":\"[Toolsmith]\",\"color\":\"dark_blue\"},{\"text\":\"toi la!\",\"color\":\"black\"}]");
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.yes")), SoundSource.NEUTRAL, 3, 1);
+						} else {
+							_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.yes")), SoundSource.NEUTRAL, 3, 1, false);
+						}
+					}
+					SmpModVMod.queueServerWork(20, () -> {
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"/tellraw @p [\"\",{\"text\":\"[Toolsmith]\",\"color\":\"dark_blue\"},{\"text\":\"jai besoin d'un coup de main!\",\"color\":\"black\"}]");
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.pillager.ambient")), SoundSource.NEUTRAL, 3, 1);
+							} else {
+								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.pillager.ambient")), SoundSource.NEUTRAL, 3, 1, false);
+							}
+						}
+						SmpModVMod.queueServerWork(20, () -> {
+							if (world instanceof ServerLevel _level)
+								_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"/tellraw @p [\"\",{\"text\":\"[Toolsmith]\",\"color\":\"dark_blue\"},{\"text\":\"il me manque\",\"color\":\"black\"},{\"text\":\" x5 raw titanium \",\"color\":\"blue\"},{\"text\":\"tu peut me les trouver?\",\"color\":\"black\"}]");
+							if (world instanceof Level _level) {
+								if (!_level.isClientSide()) {
+									_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.yes")), SoundSource.NEUTRAL, 3, 1);
+								} else {
+									_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.yes")), SoundSource.NEUTRAL, 3, 1, false);
+								}
+							}
+							SmpModVMod.queueServerWork(20, () -> {
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+											"/tellraw @p [\"\",{\"text\":\"[Toolsmith]\",\"color\":\"dark_blue\"},{\"text\":\"merci beaucoup!\",\"color\":\"black\"}]");
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.pillager.ambient")), SoundSource.NEUTRAL, 3, 1);
+									} else {
+										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.pillager.ambient")), SoundSource.NEUTRAL, 3, 1, false);
+									}
+								}
+							});
+						});
+					});
+				}
+			}
+		}
+		if (entity.getPersistentData().getBoolean("quest5") == true) {
+			if (sourceentity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel ? _plr.getAdvancements().getOrStartProgress(_plr.server.getAdvancements().getAdvancement(new ResourceLocation("smp_mod_v:quest_5"))).isDone() : false) {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"/tellraw @p [\"\",{\"text\":\"[Toolsmith]\",\"color\":\"dark_blue\"},{\"text\":\"bienvenue a la forge!\",\"color\":\"black\"}]");
 			}
 		}
 	}

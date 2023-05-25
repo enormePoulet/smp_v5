@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "smp_mod_v:deepslatetitaniumore",
+  "step": "underground_ores"
+}

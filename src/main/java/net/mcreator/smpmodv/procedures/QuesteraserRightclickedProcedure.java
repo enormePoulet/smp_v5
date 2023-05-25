@@ -42,5 +42,13 @@ public class QuesteraserRightclickedProcedure {
 						_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "advancement revoke @s only smp_mod_v:quest_4");
 			}
 		}
+		entity.getPersistentData().putBoolean("accepted5", (false));
+		{
+			Entity _ent = entity;
+			if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+				_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+						_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "advancement revoke @s only smp_mod_v:quest_5");
+			}
+		}
 	}
 }

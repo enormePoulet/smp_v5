@@ -1,0 +1,167 @@
+{
+  "minecraft:recipes/misc/iron_ingot_from_iron_block": {
+    "criteria": {
+      "has_iron_block": "2023-05-25 07:39:47 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_copper_slab_from_copper_block_stonecutting": {
+    "criteria": {
+      "has_copper_block": "2023-05-25 07:39:54 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_blasting": {
+    "criteria": {
+      "has_iron_chestplate": "2023-05-25 07:33:15 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/dark_oak_boat": {
+    "criteria": {
+      "in_water": "2023-05-25 07:33:40 +0200"
+    },
+    "done": true
+  },
+  "smp_mod_v:stonecave": {
+    "criteria": {
+      "stonecave": "2023-05-25 07:37:05 +0200"
+    },
+    "done": true
+  },
+  "minecraft:story/obtain_armor": {
+    "criteria": {
+      "iron_chestplate": "2023-05-25 07:33:15 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/copper_ingot": {
+    "criteria": {
+      "has_copper_block": "2023-05-25 07:39:54 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_nugget_from_smelting": {
+    "criteria": {
+      "has_iron_chestplate": "2023-05-25 07:33:15 +0200"
+    },
+    "done": true
+  },
+  "smp_mod_v:quest": {
+    "criteria": {
+      "quest": "2023-05-25 07:30:52 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:sparse_jungle": "2023-05-25 07:33:50 +0200",
+      "minecraft:lukewarm_ocean": "2023-05-25 07:40:13 +0200",
+      "minecraft:river": "2023-05-25 07:33:51 +0200",
+      "minecraft:stony_shore": "2023-05-25 07:38:14 +0200",
+      "minecraft:dripstone_caves": "2023-05-25 07:33:41 +0200",
+      "minecraft:forest": "2023-05-25 07:34:45 +0200",
+      "minecraft:lush_caves": "2023-05-25 07:37:05 +0200",
+      "minecraft:jungle": "2023-05-25 07:30:58 +0200",
+      "minecraft:plains": "2023-05-25 07:34:09 +0200"
+    },
+    "done": false
+  },
+  "minecraft:recipes/misc/raw_gold": {
+    "criteria": {
+      "has_raw_gold_block": "2023-05-25 07:39:35 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/waxed_copper_block_from_honeycomb": {
+    "criteria": {
+      "has_copper_block": "2023-05-25 07:39:54 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_copper_stairs_from_copper_block_stonecutting": {
+    "criteria": {
+      "has_copper_block": "2023-05-25 07:39:54 +0200"
+    },
+    "done": true
+  },
+  "smp_mod_v:lushcave": {
+    "criteria": {
+      "lushcave": "2023-05-25 07:37:05 +0200"
+    },
+    "done": true
+  },
+  "smp_mod_v:dripstonecave": {
+    "criteria": {
+      "dripstonecave": "2023-05-25 07:37:05 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2023-05-25 07:39:35 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "in_water": "2023-05-25 07:33:40 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_copper_from_copper_block_stonecutting": {
+    "criteria": {
+      "has_copper_block": "2023-05-25 07:39:54 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/mangrove_boat": {
+    "criteria": {
+      "in_water": "2023-05-25 07:33:40 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
+    "criteria": {
+      "in_water": "2023-05-25 07:33:40 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/oak_boat": {
+    "criteria": {
+      "in_water": "2023-05-25 07:33:40 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cut_copper": {
+    "criteria": {
+      "has_copper_block": "2023-05-25 07:39:54 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/anvil": {
+    "criteria": {
+      "has_iron_block": "2023-05-25 07:39:47 +0200"
+    },
+    "done": true
+  },
+  "smp_mod_v:caves": {
+    "criteria": {
+      "caves": "2023-05-25 07:37:05 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/jungle_boat": {
+    "criteria": {
+      "in_water": "2023-05-25 07:33:40 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/spruce_boat": {
+    "criteria": {
+      "in_water": "2023-05-25 07:33:40 +0200"
+    },
+    "done": true
+  },
+  "DataVersion": 3120
+}

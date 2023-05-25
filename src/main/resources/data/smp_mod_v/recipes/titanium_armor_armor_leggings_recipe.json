@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "smp_mod_v:titaniumingot"
+    },
+    "1": {
+      "item": "smp_mod_v:titaniumingot"
+    },
+    "2": {
+      "item": "smp_mod_v:titaniumingot"
+    },
+    "3": {
+      "item": "smp_mod_v:titaniumingot"
+    },
+    "5": {
+      "item": "smp_mod_v:titaniumingot"
+    },
+    "6": {
+      "item": "smp_mod_v:titaniumingot"
+    },
+    "8": {
+      "item": "smp_mod_v:titaniumingot"
+    }
+  },
+  "result": {
+    "item": "smp_mod_v:titanium_armor_armor_leggings",
+    "count": 1
+  }
+}

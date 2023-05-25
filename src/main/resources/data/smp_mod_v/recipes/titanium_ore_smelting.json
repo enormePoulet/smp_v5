@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 3.15,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "smp_mod_v:titanium"
+  },
+  "result": "smp_mod_v:titaniumingot"
+}
