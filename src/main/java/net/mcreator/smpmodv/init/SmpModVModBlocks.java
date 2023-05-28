@@ -15,6 +15,7 @@ import net.mcreator.smpmodv.block.TitaniumBlockBlock;
 import net.mcreator.smpmodv.block.SqueezerBlock;
 import net.mcreator.smpmodv.block.SnaildensignBlock;
 import net.mcreator.smpmodv.block.RawtitaniumblockBlock;
+import net.mcreator.smpmodv.block.Quest6activatorBlock;
 import net.mcreator.smpmodv.block.Quest5activatorBlock;
 import net.mcreator.smpmodv.block.Quest4activatorBlock;
 import net.mcreator.smpmodv.block.Quest3activatorBlock;
@@ -42,4 +43,5 @@ public class SmpModVModBlocks {
 	public static final RegistryObject<Block> DEEPSLATETITANIUMORE = REGISTRY.register("deepslatetitaniumore", () -> new DeepslatetitaniumoreBlock());
 	public static final RegistryObject<Block> RAWTITANIUMBLOCK = REGISTRY.register("rawtitaniumblock", () -> new RawtitaniumblockBlock());
 	public static final RegistryObject<Block> QUEST_5ACTIVATOR = REGISTRY.register("quest_5activator", () -> new Quest5activatorBlock());
+	public static final RegistryObject<Block> QUEST_6ACTIVATOR = REGISTRY.register("quest_6activator", () -> new Quest6activatorBlock());
 }

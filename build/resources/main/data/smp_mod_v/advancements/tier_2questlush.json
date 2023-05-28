@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:gold_block"
+    },
+    "title": {
+      "translate": "advancements.tier_2questlush.title"
+    },
+    "description": {
+      "translate": "advancements.tier_2questlush.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "tier_2questlush": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "smp_mod_v:quest_5"
+}

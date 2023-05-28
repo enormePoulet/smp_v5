@@ -22,7 +22,7 @@ public class Titanium_toolsSwordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 4f;
+				return 16f;
 			}
 
 			public int getLevel() {

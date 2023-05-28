@@ -1,25 +1,7 @@
 {
-  "minecraft:recipes/building_blocks/quartz_pillar_from_quartz_block_stonecutting": {
-    "criteria": {
-      "has_quartz_block": "2023-05-25 08:43:43 +0200"
-    },
-    "done": true
-  },
-  "smp_mod_v:quest_5": {
-    "criteria": {
-      "quest_5": "2023-05-25 08:42:13 +0200"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/quartz_pillar": {
     "criteria": {
       "has_quartz_block": "2023-05-25 08:43:43 +0200"
-    },
-    "done": true
-  },
-  "smp_mod_v:lushcave": {
-    "criteria": {
-      "lushcave": "2023-05-24 14:36:58 +0200"
     },
     "done": true
   },
@@ -32,6 +14,66 @@
   "minecraft:recipes/building_blocks/quartz_stairs_from_quartz_block_stonecutting": {
     "criteria": {
       "has_quartz_block": "2023-05-25 08:43:43 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_bricks_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2023-05-25 08:43:43 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/chiseled_quartz_block_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2023-05-25 08:43:43 +0200"
+    },
+    "done": true
+  },
+  "smp_mod_v:stonecave": {
+    "criteria": {
+      "stonecave": "2023-05-24 14:36:58 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_slab_from_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2023-05-25 08:43:43 +0200"
+    },
+    "done": true
+  },
+  "smp_mod_v:quest": {
+    "criteria": {
+      "quest": "2023-05-24 14:36:49 +0200"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2023-05-24 14:36:33 +0200"
+    },
+    "done": false
+  },
+  "minecraft:recipes/building_blocks/chiseled_quartz_block": {
+    "criteria": {
+      "has_quartz_block": "2023-05-25 08:43:43 +0200"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/quartz_pillar_from_quartz_block_stonecutting": {
+    "criteria": {
+      "has_quartz_block": "2023-05-25 08:43:43 +0200"
+    },
+    "done": true
+  },
+  "smp_mod_v:quest_6": {
+    "criteria": {
+      "quest_6": "2023-05-27 08:11:52 +0200"
+    },
+    "done": true
+  },
+  "smp_mod_v:lushcave": {
+    "criteria": {
+      "lushcave": "2023-05-24 14:36:58 +0200"
     },
     "done": true
   },
@@ -65,21 +107,21 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/quartz_bricks_from_quartz_block_stonecutting": {
+  "smp_mod_v:quest_4": {
     "criteria": {
-      "has_quartz_block": "2023-05-25 08:43:43 +0200"
+      "quest_4": "2023-05-27 08:12:32 +0200"
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/chiseled_quartz_block_from_quartz_block_stonecutting": {
+  "minecraft:story/root": {
     "criteria": {
-      "has_quartz_block": "2023-05-25 08:43:43 +0200"
+      "crafting_table": "2023-05-27 09:33:30 +0200"
     },
     "done": true
   },
-  "smp_mod_v:stonecave": {
+  "smp_mod_v:tier_2questlush": {
     "criteria": {
-      "stonecave": "2023-05-24 14:36:58 +0200"
+      "tier_2questlush": "2023-05-26 19:47:25 +0200"
     },
     "done": true
   },
@@ -95,33 +137,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/quartz_slab_from_stonecutting": {
+  "minecraft:husbandry/plant_seed": {
     "criteria": {
-      "has_quartz_block": "2023-05-25 08:43:43 +0200"
+      "wheat": "2023-05-26 19:48:44 +0200"
     },
     "done": true
   },
   "smp_mod_v:ancientruneaquired": {
     "criteria": {
       "ancientruneaquired": "2023-05-25 08:47:36 +0200"
-    },
-    "done": true
-  },
-  "smp_mod_v:quest": {
-    "criteria": {
-      "quest": "2023-05-24 14:36:49 +0200"
-    },
-    "done": true
-  },
-  "minecraft:adventure/adventuring_time": {
-    "criteria": {
-      "minecraft:plains": "2023-05-24 14:36:33 +0200"
-    },
-    "done": false
-  },
-  "minecraft:recipes/building_blocks/chiseled_quartz_block": {
-    "criteria": {
-      "has_quartz_block": "2023-05-25 08:43:43 +0200"
     },
     "done": true
   },

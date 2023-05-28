@@ -23,6 +23,7 @@ import net.mcreator.smpmodv.item.Titanium_toolsAxeItem;
 import net.mcreator.smpmodv.item.Titanium_armorArmorItem;
 import net.mcreator.smpmodv.item.TitaniumItem;
 import net.mcreator.smpmodv.item.QuesteraserItem;
+import net.mcreator.smpmodv.item.MagicalcropgrowerItem;
 import net.mcreator.smpmodv.item.HermitcrabscutItem;
 import net.mcreator.smpmodv.item.GlowberriejuiceItem;
 import net.mcreator.smpmodv.item.CoppernuggetItem;
@@ -92,6 +93,8 @@ public class SmpModVModItems {
 	public static final RegistryObject<Item> TITANIUM_TOOLS_SHOVEL = REGISTRY.register("titanium_tools_shovel", () -> new Titanium_toolsShovelItem());
 	public static final RegistryObject<Item> TITANIUM_TOOLS_HOE = REGISTRY.register("titanium_tools_hoe", () -> new Titanium_toolsHoeItem());
 	public static final RegistryObject<Item> QUEST_5ACTIVATOR = block(SmpModVModBlocks.QUEST_5ACTIVATOR, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> QUEST_6ACTIVATOR = block(SmpModVModBlocks.QUEST_6ACTIVATOR, CreativeModeTab.TAB_BUILDING_BLOCKS);
+	public static final RegistryObject<Item> MAGICALCROPGROWER = REGISTRY.register("magicalcropgrower", () -> new MagicalcropgrowerItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

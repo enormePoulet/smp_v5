@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "smp_mod_v:coppergear"
+    },
+    "3": {
+      "item": "minecraft:copper_ingot"
+    },
+    "4": {
+      "item": "minecraft:ender_eye"
+    },
+    "5": {
+      "item": "minecraft:copper_ingot"
+    },
+    "7": {
+      "item": "smp_mod_v:coppergear"
+    }
+  },
+  "result": {
+    "item": "smp_mod_v:coppercore",
+    "count": 1
+  }
+}

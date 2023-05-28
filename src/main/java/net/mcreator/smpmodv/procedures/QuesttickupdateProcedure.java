@@ -51,6 +51,11 @@ public class QuesttickupdateProcedure {
 					((LushgoblinEntity) entity).setAnimation("goblin_waving_when_quest");
 				}
 			}
+			if (entity.getPersistentData().getBoolean("quest6") == true) {
+				if (entity instanceof LushgoblinEntity) {
+					((LushgoblinEntity) entity).setAnimation("goblin_waving_when_quest");
+				}
+			}
 		}
 	}
 }

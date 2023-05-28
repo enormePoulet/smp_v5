@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:tropical_fish_bucket"
+    },
+    "title": {
+      "translate": "advancements.quest_6.title"
+    },
+    "description": {
+      "translate": "advancements.quest_6.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "quest_6": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "smp_mod_v:tier_2questlush"
+}
