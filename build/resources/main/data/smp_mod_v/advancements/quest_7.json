@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "smp_mod_v:almethystsword"
+    },
+    "title": {
+      "translate": "advancements.quest_7.title"
+    },
+    "description": {
+      "translate": "advancements.quest_7.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "quest_7": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "smp_mod_v:quest_6"
+}

@@ -34,7 +34,10 @@ public class TitaniumOreFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new TitaniumOreFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("smp_mod_v:titanium_ore", FEATURE,
-				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), SmpModVModBlocks.TITANIUM_ORE.get().defaultBlockState())), 8));
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), SmpModVModBlocks.TITANIUM_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.GRANITE.defaultBlockState()), SmpModVModBlocks.TITANIUM_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.DIORITE.defaultBlockState()), SmpModVModBlocks.TITANIUM_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.ANDESITE.defaultBlockState()), SmpModVModBlocks.TITANIUM_ORE.get().defaultBlockState())), 8));
 		PLACED_FEATURE = PlacementUtils.register("smp_mod_v:titanium_ore", CONFIGURED_FEATURE,
 				List.of(CountPlacement.of(1), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(18)), BiomeFilter.biome()));
 		return FEATURE;

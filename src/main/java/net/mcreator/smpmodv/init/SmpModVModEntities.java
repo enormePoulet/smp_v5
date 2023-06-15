@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.smpmodv.entity.LushhermitcrabEntity;
+import net.mcreator.smpmodv.entity.LushgoblinkingEntity;
 import net.mcreator.smpmodv.entity.LushgoblinEntity;
 import net.mcreator.smpmodv.entity.BlssomcreatureEntity;
 import net.mcreator.smpmodv.SmpModVMod;
@@ -36,6 +37,10 @@ public class SmpModVModEntities {
 			EntityType.Builder.<LushgoblinEntity>of(LushgoblinEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(120).setUpdateInterval(3).setCustomClientFactory(LushgoblinEntity::new)
 
 					.sized(1f, 1f));
+	public static final RegistryObject<EntityType<LushgoblinkingEntity>> LUSHGOBLINKING = register("lushgoblinking",
+			EntityType.Builder.<LushgoblinkingEntity>of(LushgoblinkingEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LushgoblinkingEntity::new)
+
+					.sized(2f, 3f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -47,6 +52,7 @@ public class SmpModVModEntities {
 			LushhermitcrabEntity.init();
 			BlssomcreatureEntity.init();
 			LushgoblinEntity.init();
+			LushgoblinkingEntity.init();
 		});
 	}
 
@@ -55,5 +61,6 @@ public class SmpModVModEntities {
 		event.put(LUSHHERMITCRAB.get(), LushhermitcrabEntity.createAttributes().build());
 		event.put(BLSSOMCREATURE.get(), BlssomcreatureEntity.createAttributes().build());
 		event.put(LUSHGOBLIN.get(), LushgoblinEntity.createAttributes().build());
+		event.put(LUSHGOBLINKING.get(), LushgoblinkingEntity.createAttributes().build());
 	}
 }

@@ -10,6 +10,7 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.smpmodv.client.renderer.LushhermitcrabRenderer;
+import net.mcreator.smpmodv.client.renderer.LushgoblinkingRenderer;
 import net.mcreator.smpmodv.client.renderer.LushgoblinRenderer;
 import net.mcreator.smpmodv.client.renderer.BlssomcreatureRenderer;
 
@@ -20,5 +21,6 @@ public class SmpModVModEntityRenderers {
 		event.registerEntityRenderer(SmpModVModEntities.LUSHHERMITCRAB.get(), LushhermitcrabRenderer::new);
 		event.registerEntityRenderer(SmpModVModEntities.BLSSOMCREATURE.get(), BlssomcreatureRenderer::new);
 		event.registerEntityRenderer(SmpModVModEntities.LUSHGOBLIN.get(), LushgoblinRenderer::new);
+		event.registerEntityRenderer(SmpModVModEntities.LUSHGOBLINKING.get(), LushgoblinkingRenderer::new);
 	}
 }

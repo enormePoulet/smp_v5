@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "smp_mod_v:blackwoolpatch"
+    },
+    "1": {
+      "item": "smp_mod_v:blackwoolpatch"
+    },
+    "2": {
+      "item": "smp_mod_v:blackwoolpatch"
+    },
+    "3": {
+      "item": "smp_mod_v:blackwoolpatch"
+    },
+    "5": {
+      "item": "smp_mod_v:blackwoolpatch"
+    }
+  },
+  "result": {
+    "item": "smp_mod_v:blackcloak_helmet",
+    "count": 1
+  }
+}

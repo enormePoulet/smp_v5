@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 45",
+    " 78"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:gold_ingot"
+    },
+    "1": {
+      "item": "smp_mod_v:whitewoolpatch"
+    },
+    "2": {
+      "item": "smp_mod_v:whitewoolpatch"
+    },
+    "4": {
+      "item": "smp_mod_v:whitewoolpatch"
+    },
+    "5": {
+      "item": "smp_mod_v:whitewoolpatch"
+    },
+    "7": {
+      "item": "smp_mod_v:whitewoolpatch"
+    },
+    "8": {
+      "item": "smp_mod_v:whitewoolpatch"
+    }
+  },
+  "result": {
+    "item": "smp_mod_v:whitecloak_chestplate",
+    "count": 1
+  }
+}

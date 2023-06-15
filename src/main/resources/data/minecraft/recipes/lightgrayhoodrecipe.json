@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "smp_mod_v:lightgraywoolpatch"
+    },
+    "1": {
+      "item": "smp_mod_v:lightgraywoolpatch"
+    },
+    "2": {
+      "item": "smp_mod_v:lightgraywoolpatch"
+    },
+    "3": {
+      "item": "smp_mod_v:lightgraywoolpatch"
+    },
+    "5": {
+      "item": "smp_mod_v:lightgraywoolpatch"
+    }
+  },
+  "result": {
+    "item": "smp_mod_v:lightgraycloak_helmet",
+    "count": 1
+  }
+}

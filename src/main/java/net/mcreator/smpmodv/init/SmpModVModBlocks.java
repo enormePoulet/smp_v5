@@ -15,6 +15,8 @@ import net.mcreator.smpmodv.block.TitaniumBlockBlock;
 import net.mcreator.smpmodv.block.SqueezerBlock;
 import net.mcreator.smpmodv.block.SnaildensignBlock;
 import net.mcreator.smpmodv.block.RawtitaniumblockBlock;
+import net.mcreator.smpmodv.block.Quest8activatorBlock;
+import net.mcreator.smpmodv.block.Quest7activatorBlock;
 import net.mcreator.smpmodv.block.Quest6activatorBlock;
 import net.mcreator.smpmodv.block.Quest5activatorBlock;
 import net.mcreator.smpmodv.block.Quest4activatorBlock;
@@ -44,4 +46,6 @@ public class SmpModVModBlocks {
 	public static final RegistryObject<Block> RAWTITANIUMBLOCK = REGISTRY.register("rawtitaniumblock", () -> new RawtitaniumblockBlock());
 	public static final RegistryObject<Block> QUEST_5ACTIVATOR = REGISTRY.register("quest_5activator", () -> new Quest5activatorBlock());
 	public static final RegistryObject<Block> QUEST_6ACTIVATOR = REGISTRY.register("quest_6activator", () -> new Quest6activatorBlock());
+	public static final RegistryObject<Block> QUEST_7ACTIVATOR = REGISTRY.register("quest_7activator", () -> new Quest7activatorBlock());
+	public static final RegistryObject<Block> QUEST_8ACTIVATOR = REGISTRY.register("quest_8activator", () -> new Quest8activatorBlock());
 }

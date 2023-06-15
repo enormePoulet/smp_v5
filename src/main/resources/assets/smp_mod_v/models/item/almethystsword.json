@@ -1,0 +1,7 @@
+{
+  "parent": "smp_mod_v:custom/amethyst_sword",
+  "textures": {
+    "1": "smp_mod_v:blocks/amethyst_sword2",
+    "particle": "smp_mod_v:items/amethyst_sword_item"
+  }
+}

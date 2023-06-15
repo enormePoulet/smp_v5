@@ -17,6 +17,7 @@ import net.mcreator.smpmodv.client.model.Modelcopper_left_arm;
 import net.mcreator.smpmodv.client.model.Modelcopper_center_plate;
 import net.mcreator.smpmodv.client.model.Modelcopper_armor;
 import net.mcreator.smpmodv.client.model.Modelcopper_2arms;
+import net.mcreator.smpmodv.client.model.Modelcloak;
 import net.mcreator.smpmodv.client.model.Modelbody;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -32,5 +33,6 @@ public class SmpModVModModels {
 		event.registerLayerDefinition(Modelbody.LAYER_LOCATION, Modelbody::createBodyLayer);
 		event.registerLayerDefinition(Modelcopper_2arms.LAYER_LOCATION, Modelcopper_2arms::createBodyLayer);
 		event.registerLayerDefinition(Modelcopper_left_arm.LAYER_LOCATION, Modelcopper_left_arm::createBodyLayer);
+		event.registerLayerDefinition(Modelcloak.LAYER_LOCATION, Modelcloak::createBodyLayer);
 	}
 }

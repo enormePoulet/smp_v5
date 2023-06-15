@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 ",
+    " 3"
+  ],
+  "key": {
+    "0": {
+      "item": "smp_mod_v:amethystblade"
+    },
+    "3": {
+      "item": "smp_mod_v:amethystswordhandle"
+    }
+  },
+  "result": {
+    "item": "smp_mod_v:almethystsword",
+    "count": 1
+  }
+}

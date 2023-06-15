@@ -647,6 +647,70 @@ public class LushgoblinRightClickedOnEntityProcedure {
 								"/tellraw @p [\"\",{\"text\":\"[Farmer]\",\"color\":\"green\"},{\"text\":\"Merci de ton aide je ten suis reconnaissant!\",\"color\":\"black\"}]");
 				}
 			}
+			if (entity.getPersistentData().getBoolean("quest7") == true) {
+				if (sourceentity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel
+						? _plr.getAdvancements().getOrStartProgress(_plr.server.getAdvancements().getAdvancement(new ResourceLocation("smp_mod_v:quest_7"))).isDone()
+						: false) {
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"/tellraw @p [\"\",{\"text\":\"[Guard]\",\"color\":\"dark_blue\"},{\"text\":\" merci! sa majest\u00E9 etait tr\u00E9s amus\u00E9!\",\"color\":\"black\"}]");
+				}
+			}
+			if (!(sourceentity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel ? _plr.getAdvancements().getOrStartProgress(_plr.server.getAdvancements().getAdvancement(new ResourceLocation("smp_mod_v:quest_7"))).isDone() : false)) {
+				if (sourceentity.getPersistentData().getBoolean("accepted7") == false) {
+					if (entity.getPersistentData().getBoolean("quest7") == true) {
+						sourceentity.getPersistentData().putBoolean("accepted7", (true));
+						if (world instanceof ServerLevel _level)
+							_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"/tellraw @p [\"\",{\"text\":\"[Guard]\",\"color\":\"dark_blue\"},{\"text\":\" toi! par ici!\",\"color\":\"black\"}]");
+						if (world instanceof Level _level) {
+							if (!_level.isClientSide()) {
+								_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.yes")), SoundSource.NEUTRAL, 3, 1);
+							} else {
+								_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.yes")), SoundSource.NEUTRAL, 3, 1, false);
+							}
+						}
+						SmpModVMod.queueServerWork(20, () -> {
+							if (world instanceof ServerLevel _level)
+								_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+										"/tellraw @p [\"\",{\"text\":\"[Guard]\",\"color\":\"dark_blue\"},{\"text\":\" tu peut me donner un coup de pouce\",\"color\":\"black\"}]");
+							if (world instanceof Level _level) {
+								if (!_level.isClientSide()) {
+									_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.ambient")), SoundSource.NEUTRAL, 3, 1);
+								} else {
+									_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.ambient")), SoundSource.NEUTRAL, 3, 1, false);
+								}
+							}
+							SmpModVMod.queueServerWork(20, () -> {
+								if (world instanceof ServerLevel _level)
+									_level.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+											"/tellraw @p [\"\",{\"text\":\"[Guard]\",\"color\":\"dark_blue\"},{\"text\":\" notre roi, est vraiment mechant! il faudrait que tu lui donne une bonne lecon\",\"color\":\"black\"}]");
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.yes")), SoundSource.NEUTRAL, 3, 1);
+									} else {
+										_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.yes")), SoundSource.NEUTRAL, 3, 1, false);
+									}
+								}
+								SmpModVMod.queueServerWork(20, () -> {
+									if (world instanceof ServerLevel _level)
+										_level.getServer().getCommands().performPrefixedCommand(
+												new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+												"/tellraw @p [\"\",{\"text\":\"[Guard]\",\"color\":\"dark_blue\"},{\"text\":\" si tu y arrive il te donneras son l\u00E9gendaire \",\"color\":\"black\"},{\"text\":\"\u00E9p\u00E9e d'amethyst\",\"color\":\"light_purple\"}]");
+									if (world instanceof Level _level) {
+										if (!_level.isClientSide()) {
+											_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.ambient")), SoundSource.NEUTRAL, 3, 1);
+										} else {
+											_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.villager.ambient")), SoundSource.NEUTRAL, 3, 1, false);
+										}
+									}
+								});
+							});
+						});
+					}
+				}
+			}
 		}
 	}
 }

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "smp_mod_v:whitewoolpatch"
+    },
+    "1": {
+      "item": "smp_mod_v:whitewoolpatch"
+    },
+    "2": {
+      "item": "smp_mod_v:whitewoolpatch"
+    },
+    "3": {
+      "item": "smp_mod_v:whitewoolpatch"
+    },
+    "5": {
+      "item": "smp_mod_v:whitewoolpatch"
+    }
+  },
+  "result": {
+    "item": "smp_mod_v:whitecloak_helmet",
+    "count": 1
+  }
+}

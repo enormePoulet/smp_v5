@@ -1,0 +1,2989 @@
+{
+  "mod_elements": [
+    {
+      "name": "Lushhermitcrab",
+      "type": "animatedentity",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lushhermitcrab",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/entity/model/LushhermitcrabModel.java",
+          "src/main/java/net/mcreator/smpmodv/client/renderer/LushhermitcrabRenderer.java",
+          "src/main/resources/data/smp_mod_v/forge/biome_modifier/lushhermitcrab_biome_modifier.json",
+          "src/main/resources/assets/smp_mod_v/models/item/lushhermitcrab_spawn_egg.json",
+          "src/main/java/net/mcreator/smpmodv/entity/LushhermitcrabEntity.java"
+        ]
+      },
+      "path": "~/lush_cave/entity"
+    },
+    {
+      "name": "LushhermitcrabOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lushhermitcrab_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/LushhermitcrabOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Hermitcrabscut",
+      "type": "item",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hermitcrabscut",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/item/HermitcrabscutItem.java",
+          "src/main/resources/assets/smp_mod_v/models/item/hermitcrabscut.json"
+        ]
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "Hermitpotionrecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hermitpotionrecipe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/recipes/brewing/HermitpotionrecipeBrewingRecipe.java"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Blssomcreature",
+      "type": "animatedentity",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blssomcreature",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/client/renderer/BlssomcreatureRenderer.java",
+          "src/main/resources/assets/smp_mod_v/models/item/blssomcreature_spawn_egg.json",
+          "src/main/java/net/mcreator/smpmodv/entity/BlssomcreatureEntity.java",
+          "src/main/java/net/mcreator/smpmodv/entity/model/BlssomcreatureModel.java",
+          "src/main/resources/data/smp_mod_v/forge/biome_modifier/blssomcreature_biome_modifier.json"
+        ]
+      },
+      "path": "~/lush_cave/entity"
+    },
+    {
+      "name": "Onblossomtickupdate",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "onblossomtickupdate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/OnblossomtickupdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "BlssomcreatureRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blssomcreature_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/BlssomcreatureRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Blossomcraft",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blossomcraft",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/recipes/brewing/BlossomcraftBrewingRecipe.java"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Lushgoblin",
+      "type": "animatedentity",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lushgoblin",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/entity/LushgoblinEntity.java",
+          "src/main/resources/assets/smp_mod_v/models/item/lushgoblin_spawn_egg.json",
+          "src/main/java/net/mcreator/smpmodv/client/renderer/LushgoblinRenderer.java",
+          "src/main/java/net/mcreator/smpmodv/entity/model/LushgoblinModel.java"
+        ]
+      },
+      "path": "~/lush_cave/entity"
+    },
+    {
+      "name": "LushgoblinOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lushgoblin_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/LushgoblinOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Whendefendingwalkproc",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whendefendingwalkproc",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/WhendefendingwalkprocProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Attackgoblin",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "attackgoblin",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/AttackgoblinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Quest1",
+      "type": "achievement",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/advancements/quest_1.json"
+        ]
+      },
+      "path": "~/lush_cave/advancements"
+    },
+    {
+      "name": "LushgoblinRightClickedOnEntity",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lushgoblin_right_clicked_on_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/LushgoblinRightClickedOnEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Questtickupdate",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "questtickupdate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/QuesttickupdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Quest1activatorEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_1activator_entity_walks_on_the_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/Quest1activatorEntityWalksOnTheBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Quest1activator",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_1activator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/block/Quest1activatorBlock.java",
+          "src/main/resources/assets/smp_mod_v/blockstates/quest_1activator.json",
+          "src/main/resources/assets/smp_mod_v/models/block/quest_1activator.json",
+          "src/main/resources/assets/smp_mod_v/models/item/quest_1activator.json"
+        ]
+      },
+      "path": "~/lush_cave/blocks"
+    },
+    {
+      "name": "QuesteraserRightclicked",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "questeraser_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/QuesteraserRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Questeraser",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "questeraser",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/questeraser.json",
+          "src/main/java/net/mcreator/smpmodv/item/QuesteraserItem.java"
+        ]
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "AmethystnecklaceBodyTickEvent",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethystnecklace_body_tick_event",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/AmethystnecklaceBodyTickEventProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Amethystnecklace",
+      "type": "armor",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethystnecklace",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/item/AmethystnecklaceItem.java",
+          "src/main/resources/assets/smp_mod_v/models/item/amethystnecklace_chestplate.json"
+        ]
+      },
+      "path": "~/lush_cave/armors"
+    },
+    {
+      "name": "Quest2",
+      "type": "achievement",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/advancements/quest_2.json"
+        ]
+      },
+      "path": "~/lush_cave/advancements"
+    },
+    {
+      "name": "CrabmastereffectEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crabmastereffect_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/CrabmastereffectEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Crabmastereffect",
+      "type": "potioneffect",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crabmastereffect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/potion/CrabmastereffectMobEffect.java"
+        ]
+      },
+      "path": "~/lush_cave"
+    },
+    {
+      "name": "Crabmaster",
+      "type": "potion",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crabmaster",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "Quest2activator",
+      "type": "block",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_2activator",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/block/quest_2activator.json",
+          "src/main/resources/assets/smp_mod_v/models/item/quest_2activator.json",
+          "src/main/resources/assets/smp_mod_v/blockstates/quest_2activator.json",
+          "src/main/java/net/mcreator/smpmodv/block/Quest2activatorBlock.java"
+        ]
+      },
+      "path": "~/lush_cave/blocks"
+    },
+    {
+      "name": "Quest2activatorproc",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_2activatorproc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/Quest2activatorprocProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Amethystdust",
+      "type": "item",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethystdust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/amethystdust.json",
+          "src/main/java/net/mcreator/smpmodv/item/AmethystdustItem.java"
+        ]
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "Whenslotchanges0",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whenslotchanges_0",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/Whenslotchanges0Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Alchemytablegui",
+      "type": "gui",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alchemytablegui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/world/inventory/AlchemytableguiMenu.java",
+          "src/main/java/net/mcreator/smpmodv/network/AlchemytableguiSlotMessage.java",
+          "src/main/java/net/mcreator/smpmodv/client/gui/AlchemytableguiScreen.java"
+        ]
+      },
+      "path": "~/lush_cave"
+    },
+    {
+      "name": "Alchemytable",
+      "type": "animatedblock",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alchemytable",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/block/model/AlchemytableBlockModel.java",
+          "src/main/java/net/mcreator/smpmodv/block/model/AlchemytableDisplayModel.java",
+          "src/main/java/net/mcreator/smpmodv/block/AlchemytableBlock.java",
+          "src/main/resources/assets/smp_mod_v/blockstates/alchemytable.json",
+          "src/main/java/net/mcreator/smpmodv/block/display/AlchemytableDisplayItem.java",
+          "src/main/java/net/mcreator/smpmodv/block/entity/AlchemytableTileEntity.java",
+          "src/main/java/net/mcreator/smpmodv/block/renderer/AlchemytableDisplayItemRenderer.java",
+          "src/main/resources/assets/smp_mod_v/models/item/alchemytable.json",
+          "src/main/resources/assets/smp_mod_v/models/custom/alchemytable_particle.json",
+          "src/main/java/net/mcreator/smpmodv/block/renderer/AlchemytableTileRenderer.java"
+        ]
+      },
+      "path": "~/lush_cave/blocks"
+    },
+    {
+      "name": "Amethystdustrecipe",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethystdustrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/amethystdustrecipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Glowberriejuice",
+      "type": "item",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowberriejuice",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/item/GlowberriejuiceItem.java",
+          "src/main/resources/assets/smp_mod_v/models/item/glowberriejuice.json"
+        ]
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "Emptyjarblock",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emptyjarblock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/block/EmptyjarblockBlock.java",
+          "src/main/resources/assets/smp_mod_v/blockstates/emptyjarblock.json",
+          "src/main/resources/assets/smp_mod_v/models/block/emptyjarblock.json",
+          "src/main/resources/assets/smp_mod_v/models/item/emptyjarblock.json"
+        ]
+      },
+      "path": "~/lush_cave/blocks"
+    },
+    {
+      "name": "EmptyjarRightclickedOnBlock",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "emptyjar_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/EmptyjarRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Glowberryjar",
+      "type": "block",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "glowberryjar",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/block/GlowberryjarBlock.java",
+          "src/main/resources/assets/smp_mod_v/models/block/glowberryjar.json",
+          "src/main/resources/assets/smp_mod_v/blockstates/glowberryjar.json",
+          "src/main/resources/assets/smp_mod_v/models/item/glowberryjar.json"
+        ]
+      },
+      "path": "~/lush_cave/blocks"
+    },
+    {
+      "name": "Squeezer",
+      "type": "animatedblock",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "squeezer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/squeezer.json",
+          "src/main/java/net/mcreator/smpmodv/block/display/SqueezerDisplayItem.java",
+          "src/main/java/net/mcreator/smpmodv/block/renderer/SqueezerDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/smpmodv/block/SqueezerBlock.java",
+          "src/main/java/net/mcreator/smpmodv/block/model/SqueezerDisplayModel.java",
+          "src/main/java/net/mcreator/smpmodv/block/renderer/SqueezerTileRenderer.java",
+          "src/main/resources/assets/smp_mod_v/blockstates/squeezer.json",
+          "src/main/java/net/mcreator/smpmodv/block/model/SqueezerBlockModel.java",
+          "src/main/java/net/mcreator/smpmodv/block/entity/SqueezerTileEntity.java",
+          "src/main/resources/assets/smp_mod_v/models/custom/squeezer_particle.json"
+        ]
+      },
+      "path": "~/lush_cave/blocks"
+    },
+    {
+      "name": "Whenslotchangessqueezer",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whenslotchangessqueezer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/WhenslotchangessqueezerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "SqueezerGUI",
+      "type": "gui",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "squeezer_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/client/gui/SqueezerGUIScreen.java",
+          "src/main/java/net/mcreator/smpmodv/network/SqueezerGUISlotMessage.java",
+          "src/main/java/net/mcreator/smpmodv/world/inventory/SqueezerGUIMenu.java"
+        ]
+      },
+      "path": "~/lush_cave"
+    },
+    {
+      "name": "Quest3activator",
+      "type": "block",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_3activator",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/block/quest_3activator.json",
+          "src/main/resources/assets/smp_mod_v/models/item/quest_3activator.json",
+          "src/main/java/net/mcreator/smpmodv/block/Quest3activatorBlock.java",
+          "src/main/resources/assets/smp_mod_v/blockstates/quest_3activator.json"
+        ]
+      },
+      "path": "~/lush_cave/blocks"
+    },
+    {
+      "name": "Quest3activatorproc",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_3activatorproc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/Quest3activatorprocProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Quest3",
+      "type": "achievement",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/advancements/quest_3.json"
+        ]
+      },
+      "path": "~/lush_cave/advancements"
+    },
+    {
+      "name": "SqueezerGUIThisGUIIsClosed",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "squeezer_gui_this_gui_is_closed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/SqueezerGUIThisGUIIsClosedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "AlchemytableguiThisGUIIsClosed",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alchemytablegui_this_gui_is_closed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/AlchemytableguiThisGUIIsClosedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Quest4activator",
+      "type": "block",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_4activator",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/quest_4activator.json",
+          "src/main/resources/assets/smp_mod_v/blockstates/quest_4activator.json",
+          "src/main/resources/assets/smp_mod_v/models/block/quest_4activator.json",
+          "src/main/java/net/mcreator/smpmodv/block/Quest4activatorBlock.java"
+        ]
+      },
+      "path": "~/lush_cave/blocks"
+    },
+    {
+      "name": "Quest4activatorproc",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_4activatorproc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/Quest4activatorprocProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Quest4",
+      "type": "achievement",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/advancements/quest_4.json"
+        ]
+      },
+      "path": "~/lush_cave/advancements"
+    },
+    {
+      "name": "Followplayerquest4",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "followplayerquest_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/Followplayerquest4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Snaildensign",
+      "type": "animatedblock",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snaildensign",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/blockstates/snaildensign.json",
+          "src/main/resources/assets/smp_mod_v/models/item/snaildensign.json",
+          "src/main/resources/assets/smp_mod_v/models/custom/snaildensign_particle.json",
+          "src/main/java/net/mcreator/smpmodv/block/model/SnaildensignBlockModel.java",
+          "src/main/java/net/mcreator/smpmodv/block/entity/SnaildensignTileEntity.java",
+          "src/main/java/net/mcreator/smpmodv/block/model/SnaildensignDisplayModel.java",
+          "src/main/java/net/mcreator/smpmodv/block/display/SnaildensignDisplayItem.java",
+          "src/main/java/net/mcreator/smpmodv/block/renderer/SnaildensignTileRenderer.java",
+          "src/main/java/net/mcreator/smpmodv/block/SnaildensignBlock.java",
+          "src/main/java/net/mcreator/smpmodv/block/renderer/SnaildensignDisplayItemRenderer.java"
+        ]
+      },
+      "path": "~/lush_cave/blocks"
+    },
+    {
+      "name": "Snaildensignproc",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "snaildensignproc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/SnaildensignprocProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Ancientrune",
+      "type": "item",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancientrune",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/item/AncientruneItem.java",
+          "src/main/resources/assets/smp_mod_v/models/item/ancientrune.json"
+        ]
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "Ancientruneaquired",
+      "type": "achievement",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ancientruneaquired",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/advancements/ancientruneaquired.json"
+        ]
+      },
+      "path": "~/lush_cave/advancements"
+    },
+    {
+      "name": "Copperarmor",
+      "type": "armor",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperarmor",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/item/CopperarmorItem.java",
+          "src/main/resources/assets/smp_mod_v/models/item/copperarmor_helmet.json",
+          "src/main/resources/assets/smp_mod_v/models/item/copperarmor_leggings.json",
+          "src/main/resources/assets/smp_mod_v/models/item/copperarmor_chestplate.json"
+        ]
+      },
+      "path": "~/lush_cave/armors"
+    },
+    {
+      "name": "Copperarmorright",
+      "type": "armor",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperarmorright",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/copperarmorright_chestplate.json",
+          "src/main/java/net/mcreator/smpmodv/item/CopperarmorrightItem.java",
+          "src/main/resources/assets/smp_mod_v/models/item/copperarmorright_leggings.json"
+        ]
+      },
+      "path": "~/lush_cave/armors"
+    },
+    {
+      "name": "Copperarmorleft",
+      "type": "armor",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperarmorleft",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/copperarmorleft_chestplate.json",
+          "src/main/resources/assets/smp_mod_v/models/item/copperarmorleft_leggings.json",
+          "src/main/java/net/mcreator/smpmodv/item/CopperarmorleftItem.java"
+        ]
+      },
+      "path": "~/lush_cave/armors"
+    },
+    {
+      "name": "Coppercenterpiece",
+      "type": "armor",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coppercenterpiece",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/coppercenterpiece_chestplate.json",
+          "src/main/java/net/mcreator/smpmodv/item/CoppercenterpieceItem.java"
+        ]
+      },
+      "path": "~/lush_cave/armors"
+    },
+    {
+      "name": "Coppergear",
+      "type": "item",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coppergear",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/coppergear.json",
+          "src/main/java/net/mcreator/smpmodv/item/CoppergearItem.java"
+        ]
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "Coppernugget",
+      "type": "item",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coppernugget",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/item/CoppernuggetItem.java",
+          "src/main/resources/assets/smp_mod_v/models/item/coppernugget.json"
+        ]
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "Coppernuggetrecipe",
+      "type": "recipe",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coppernuggetrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/coppernuggetrecipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Coppergearrecipe",
+      "type": "recipe",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coppergearrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/coppergearrecipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Copperhelmetrecipe",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperhelmetrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/copperhelmetrecipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Copperleftarmrecipe",
+      "type": "recipe",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperleftarmrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/copperleftarmrecipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Copperrightarmrecipe",
+      "type": "recipe",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperrightarmrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/copperrightarmrecipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Coppercore",
+      "type": "item",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coppercore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/coppercore.json",
+          "src/main/java/net/mcreator/smpmodv/item/CoppercoreItem.java"
+        ]
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "Coppercenterplaterecipe",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coppercenterplaterecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/coppercenterplaterecipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Copperchestplaterecipe",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperchestplaterecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/copperchestplaterecipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Copperleftlegrecipe",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperleftlegrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/copperleftlegrecipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Copperrightlegrecipe",
+      "type": "recipe",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperrightlegrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/copperrightlegrecipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Copperleggingsrecipe",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperleggingsrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/copperleggingsrecipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Copperarmor2arms",
+      "type": "armor",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperarmor_2arms",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/copperarmor_2arms_chestplate.json",
+          "src/main/java/net/mcreator/smpmodv/item/Copperarmor2armsItem.java"
+        ]
+      },
+      "path": "~/lush_cave/armors"
+    },
+    {
+      "name": "Copperarmsrecipe",
+      "type": "recipe",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copperarmsrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/copperarmsrecipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Quest5",
+      "type": "achievement",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/advancements/quest_5.json"
+        ]
+      },
+      "path": "~/lush_cave/advancements"
+    },
+    {
+      "name": "Quest",
+      "type": "achievement",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/advancements/quest.json"
+        ]
+      },
+      "path": "~/lush_cave/advancements"
+    },
+    {
+      "name": "Caves",
+      "type": "achievement",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caves",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/advancements/caves.json"
+        ]
+      },
+      "path": "~/lush_cave/advancements"
+    },
+    {
+      "name": "Lushcave",
+      "type": "achievement",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lushcave",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/advancements/lushcave.json"
+        ]
+      },
+      "path": "~/lush_cave/advancements"
+    },
+    {
+      "name": "Dripstonecave",
+      "type": "achievement",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dripstonecave",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/advancements/dripstonecave.json"
+        ]
+      },
+      "path": "~/lush_cave/advancements"
+    },
+    {
+      "name": "Stonecave",
+      "type": "achievement",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stonecave",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/advancements/stonecave.json"
+        ]
+      },
+      "path": "~/lush_cave/advancements"
+    },
+    {
+      "name": "Advancementgiver",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "advancementgiver",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/AdvancementgiverProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Caveadvancement",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "caveadvancement",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/CaveadvancementProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Titanium",
+      "type": "item",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/item/TitaniumItem.java",
+          "src/main/resources/assets/smp_mod_v/models/item/titanium.json"
+        ]
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "TitaniumOre",
+      "type": "block",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/block/titanium_ore.json",
+          "src/main/java/net/mcreator/smpmodv/world/features/ores/TitaniumOreFeature.java",
+          "src/main/resources/assets/smp_mod_v/models/item/titanium_ore.json",
+          "src/main/java/net/mcreator/smpmodv/block/TitaniumOreBlock.java",
+          "src/main/resources/data/smp_mod_v/forge/biome_modifier/titanium_ore_biome_modifier.json",
+          "src/main/resources/assets/smp_mod_v/blockstates/titanium_ore.json"
+        ]
+      },
+      "path": "~/lush_cave/blocks"
+    },
+    {
+      "name": "TitaniumBlock",
+      "type": "block",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/block/titanium_block.json",
+          "src/main/resources/assets/smp_mod_v/models/item/titanium_block.json",
+          "src/main/resources/assets/smp_mod_v/blockstates/titanium_block.json",
+          "src/main/java/net/mcreator/smpmodv/block/TitaniumBlockBlock.java"
+        ]
+      },
+      "path": "~/lush_cave/blocks"
+    },
+    {
+      "name": "TitaniumOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_ore_block_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/titanium_ore_block_recipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "TitaniumBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_block_ore_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/titanium_block_ore_recipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "TitaniumOreSmelting",
+      "type": "recipe",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_ore_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/titanium_ore_smelting.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Deepslatetitaniumore",
+      "type": "block",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepslatetitaniumore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/blockstates/deepslatetitaniumore.json",
+          "src/main/java/net/mcreator/smpmodv/block/DeepslatetitaniumoreBlock.java",
+          "src/main/java/net/mcreator/smpmodv/world/features/ores/DeepslatetitaniumoreFeature.java",
+          "src/main/resources/data/smp_mod_v/forge/biome_modifier/deepslatetitaniumore_biome_modifier.json",
+          "src/main/resources/assets/smp_mod_v/models/block/deepslatetitaniumore.json",
+          "src/main/resources/assets/smp_mod_v/models/item/deepslatetitaniumore.json"
+        ]
+      },
+      "path": "~/lush_cave/blocks"
+    },
+    {
+      "name": "Titaniumingot",
+      "type": "item",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titaniumingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/titaniumingot.json",
+          "src/main/java/net/mcreator/smpmodv/item/TitaniumingotItem.java"
+        ]
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "Rawtitaniumblock",
+      "type": "block",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rawtitaniumblock",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/rawtitaniumblock.json",
+          "src/main/resources/assets/smp_mod_v/blockstates/rawtitaniumblock.json",
+          "src/main/resources/assets/smp_mod_v/models/block/rawtitaniumblock.json",
+          "src/main/java/net/mcreator/smpmodv/block/RawtitaniumblockBlock.java"
+        ]
+      },
+      "path": "~/lush_cave/blocks"
+    },
+    {
+      "name": "Rawtitaniumblockrecie",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rawtitaniumblockrecie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/rawtitaniumblockrecie.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Titaniumblockrecipe",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titaniumblockrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/titaniumblockrecipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Titanium_armorArmor",
+      "type": "armor",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_armor_armor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/titanium_armor_armor_chestplate.json",
+          "src/main/java/net/mcreator/smpmodv/item/Titanium_armorArmorItem.java",
+          "src/main/resources/assets/smp_mod_v/models/item/titanium_armor_armor_helmet.json",
+          "src/main/resources/assets/smp_mod_v/models/item/titanium_armor_armor_boots.json",
+          "src/main/resources/assets/smp_mod_v/models/item/titanium_armor_armor_leggings.json"
+        ]
+      },
+      "path": "~/lush_cave/armors"
+    },
+    {
+      "name": "Titanium_armorArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_armor_armor_helmet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/titanium_armor_armor_helmet_recipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Titanium_armorArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_armor_armor_body_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/titanium_armor_armor_body_recipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Titanium_armorArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_armor_armor_leggings_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/titanium_armor_armor_leggings_recipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Titanium_armorArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_armor_armor_boots_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/titanium_armor_armor_boots_recipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Titanium_toolsPickaxe",
+      "type": "tool",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_tools_pickaxe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/item/Titanium_toolsPickaxeItem.java",
+          "src/main/resources/assets/smp_mod_v/models/item/titanium_tools_pickaxe.json"
+        ]
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "Titanium_toolsAxe",
+      "type": "tool",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_tools_axe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/titanium_tools_axe.json",
+          "src/main/java/net/mcreator/smpmodv/item/Titanium_toolsAxeItem.java"
+        ]
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "Titanium_toolsSword",
+      "type": "tool",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_tools_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/titanium_tools_sword.json",
+          "src/main/java/net/mcreator/smpmodv/item/Titanium_toolsSwordItem.java"
+        ]
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "Titanium_toolsShovel",
+      "type": "tool",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_tools_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/titanium_tools_shovel.json",
+          "src/main/java/net/mcreator/smpmodv/item/Titanium_toolsShovelItem.java"
+        ]
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "Titanium_toolsHoe",
+      "type": "tool",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_tools_hoe",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/titanium_tools_hoe.json",
+          "src/main/java/net/mcreator/smpmodv/item/Titanium_toolsHoeItem.java"
+        ]
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "Titanium_toolsPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_tools_pickaxe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/titanium_tools_pickaxe_recipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Titanium_toolsAxeRecipe",
+      "type": "recipe",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_tools_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/titanium_tools_axe_recipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Titanium_toolsSwordRecipe",
+      "type": "recipe",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_tools_sword_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/titanium_tools_sword_recipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Titanium_toolsShovelRecipe",
+      "type": "recipe",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_tools_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/titanium_tools_shovel_recipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Titanium_toolsHoeRecipe",
+      "type": "recipe",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "titanium_tools_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/titanium_tools_hoe_recipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Quest5activator",
+      "type": "block",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_5activator",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/quest_5activator.json",
+          "src/main/resources/assets/smp_mod_v/models/block/quest_5activator.json",
+          "src/main/resources/assets/smp_mod_v/blockstates/quest_5activator.json",
+          "src/main/java/net/mcreator/smpmodv/block/Quest5activatorBlock.java"
+        ]
+      },
+      "path": "~/lush_cave/blocks"
+    },
+    {
+      "name": "Quest5activatorproc",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_5activatorproc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/Quest5activatorprocProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Tier2questlush",
+      "type": "achievement",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tier_2questlush",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/advancements/tier_2questlush.json"
+        ]
+      },
+      "path": "~/lush_cave/advancements"
+    },
+    {
+      "name": "Tier2questlushproc",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tier_2questlushproc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/Tier2questlushprocProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Quest6activator",
+      "type": "block",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_6activator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/block/Quest6activatorBlock.java",
+          "src/main/resources/assets/smp_mod_v/blockstates/quest_6activator.json",
+          "src/main/resources/assets/smp_mod_v/models/block/quest_6activator.json",
+          "src/main/resources/assets/smp_mod_v/models/item/quest_6activator.json"
+        ]
+      },
+      "path": "~/lush_cave/blocks"
+    },
+    {
+      "name": "Quest6activatorproc",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_6activatorproc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/Quest6activatorprocProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Quest6",
+      "type": "achievement",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_6",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/advancements/quest_6.json"
+        ]
+      },
+      "path": "~/lush_cave/advancements"
+    },
+    {
+      "name": "Alchemytablerecipe",
+      "type": "recipe",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "alchemytablerecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/alchemytablerecipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Squeezerrecipe",
+      "type": "recipe",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "squeezerrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/squeezerrecipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Amethystmagiccollar",
+      "type": "recipe",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethystmagiccollar",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/amethystmagicnecklace.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Coppercorerecipe",
+      "type": "recipe",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coppercorerecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/coppercorerecipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "MagicalcropgrowerRightclicked",
+      "type": "procedure",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magicalcropgrower_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/MagicalcropgrowerRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Magicalcropgrower",
+      "type": "item",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magicalcropgrower",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/item/MagicalcropgrowerItem.java",
+          "src/main/resources/assets/smp_mod_v/models/item/magicalcropgrower.json"
+        ]
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "Cropgrowerrecipe",
+      "type": "recipe",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cropgrowerrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/cropgrowerrecipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Recipeunlocker",
+      "type": "procedure",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "recipeunlocker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/RecipeunlockerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Quest7",
+      "type": "achievement",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_7",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/advancements/quest_7.json"
+        ]
+      },
+      "path": "~/lush_cave/advancements"
+    },
+    {
+      "name": "Quest7activator",
+      "type": "block",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_7activator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/block/Quest7activatorBlock.java",
+          "src/main/resources/assets/smp_mod_v/models/block/quest_7activator.json",
+          "src/main/resources/assets/smp_mod_v/models/item/quest_7activator.json",
+          "src/main/resources/assets/smp_mod_v/blockstates/quest_7activator.json"
+        ]
+      },
+      "path": "~/lush_cave/blocks"
+    },
+    {
+      "name": "Quest7activatorproc",
+      "type": "procedure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_7activatorproc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/Quest7activatorprocProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Lushgoblinking",
+      "type": "animatedentity",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lushgoblinking",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/entity/LushgoblinkingEntity.java",
+          "src/main/resources/assets/smp_mod_v/models/item/lushgoblinking_spawn_egg.json",
+          "src/main/java/net/mcreator/smpmodv/entity/model/LushgoblinkingModel.java",
+          "src/main/java/net/mcreator/smpmodv/client/renderer/LushgoblinkingRenderer.java"
+        ]
+      },
+      "path": "~/lush_cave/entity"
+    },
+    {
+      "name": "LushgoblinkingEntityIsHurt",
+      "type": "procedure",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lushgoblinking_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/LushgoblinkingEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Amethystblade",
+      "type": "item",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethystblade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/amethystblade.json",
+          "src/main/java/net/mcreator/smpmodv/item/AmethystbladeItem.java"
+        ]
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "Amethystbladerecipe",
+      "type": "recipe",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethystbladerecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/amethystbladerecipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Amethystswordhandle",
+      "type": "item",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethystswordhandle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/item/AmethystswordhandleItem.java",
+          "src/main/resources/assets/smp_mod_v/models/item/amethystswordhandle.json"
+        ]
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "Amethystswordhandlerecipe",
+      "type": "recipe",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethystswordhandlerecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/amethystswordhandlerecipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Almethystsword",
+      "type": "tool",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "almethystsword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/item/AlmethystswordItem.java",
+          "src/main/resources/assets/smp_mod_v/models/item/almethystsword.json"
+        ]
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "Amethystswordrecipe",
+      "type": "recipe",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "amethystswordrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/amethystswordrecipe.json"
+        ]
+      },
+      "path": "~/lush_cave/recipes"
+    },
+    {
+      "name": "Quest7finishedproc",
+      "type": "procedure",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_7finishedproc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/Quest7finishedprocProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Cagekey",
+      "type": "item",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cagekey",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/cagekey.json",
+          "src/main/java/net/mcreator/smpmodv/item/CagekeyItem.java"
+        ]
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "Quest8",
+      "type": "achievement",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_8",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/advancements/quest_8.json"
+        ]
+      },
+      "path": "~/lush_cave/advancements"
+    },
+    {
+      "name": "Quest8activator",
+      "type": "block",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_8activator",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/blockstates/quest_8activator.json",
+          "src/main/resources/assets/smp_mod_v/models/block/quest_8activator.json",
+          "src/main/resources/assets/smp_mod_v/models/item/quest_8activator.json",
+          "src/main/java/net/mcreator/smpmodv/block/Quest8activatorBlock.java"
+        ]
+      },
+      "path": "~/lush_cave/blocks"
+    },
+    {
+      "name": "Quest8activatorproc",
+      "type": "procedure",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quest_8activatorproc",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/procedures/Quest8activatorprocProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/lush_cave/procedures"
+    },
+    {
+      "name": "Whitewoolpatch",
+      "type": "item",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whitewoolpatch",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/whitewoolpatch.json",
+          "src/main/java/net/mcreator/smpmodv/item/WhitewoolpatchItem.java"
+        ]
+      },
+      "path": "~/lush_cave/items"
+    },
+    {
+      "name": "Whitewoolpatchrecie",
+      "type": "recipe",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whitewoolpatchrecie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/whitewoolpatchrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Whitecloak",
+      "type": "armor",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whitecloak",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/whitecloak_chestplate.json",
+          "src/main/resources/assets/smp_mod_v/models/item/whitecloak_helmet.json",
+          "src/main/java/net/mcreator/smpmodv/item/WhitecloakItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Whitecloakrecipe",
+      "type": "recipe",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whitecloakrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/whitecloakrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Whitehoodrecipe",
+      "type": "recipe",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "whitehoodrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/whitehoodrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Lightgraycloak",
+      "type": "armor",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightgraycloak",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/item/LightgraycloakItem.java",
+          "src/main/resources/assets/smp_mod_v/models/item/lightgraycloak_chestplate.json",
+          "src/main/resources/assets/smp_mod_v/models/item/lightgraycloak_helmet.json"
+        ]
+      }
+    },
+    {
+      "name": "Lightgraywoolpatch",
+      "type": "item",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightgraywoolpatch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/item/LightgraywoolpatchItem.java",
+          "src/main/resources/assets/smp_mod_v/models/item/lightgraywoolpatch.json"
+        ]
+      }
+    },
+    {
+      "name": "Lightgraywoolpatchrecipe",
+      "type": "recipe",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightgraywoolpatchrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/lightgraywoolpatchrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Lightgraycloakrecipe",
+      "type": "recipe",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightgraycloakrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/lightgraycloakrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Lightgrayhoodrecipe",
+      "type": "recipe",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lightgrayhoodrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/lightgrayhoodrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Graywoolpatch",
+      "type": "item",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "graywoolpatch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/item/GraywoolpatchItem.java",
+          "src/main/resources/assets/smp_mod_v/models/item/graywoolpatch.json"
+        ]
+      }
+    },
+    {
+      "name": "Graywoolpatchrecipe",
+      "type": "recipe",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "graywoolpatchrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/graywoolpatchrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Graycloak",
+      "type": "armor",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "graycloak",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/item/GraycloakItem.java",
+          "src/main/resources/assets/smp_mod_v/models/item/graycloak_chestplate.json",
+          "src/main/resources/assets/smp_mod_v/models/item/graycloak_helmet.json"
+        ]
+      }
+    },
+    {
+      "name": "Graycloakrecipe",
+      "type": "recipe",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "graycloakrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/graycloakrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Grayhoodrecipe",
+      "type": "recipe",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grayhoodrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/grayhoodrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Blackwoolpatch",
+      "type": "item",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackwoolpatch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/item/BlackwoolpatchItem.java",
+          "src/main/resources/assets/smp_mod_v/models/item/blackwoolpatch.json"
+        ]
+      }
+    },
+    {
+      "name": "Blackwoolpatchrecipe",
+      "type": "recipe",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackwoolpatchrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/blackwoolpatchrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Blackcloak",
+      "type": "armor",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackcloak",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/blackcloak_chestplate.json",
+          "src/main/java/net/mcreator/smpmodv/item/BlackcloakItem.java",
+          "src/main/resources/assets/smp_mod_v/models/item/blackcloak_helmet.json"
+        ]
+      }
+    },
+    {
+      "name": "Blackcloakrecipe",
+      "type": "recipe",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackcloakrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/blackcloakrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Blackhoodrecipe",
+      "type": "recipe",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blackhoodrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/blackhoodrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Brownwoolpatch",
+      "type": "item",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brownwoolpatch",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/item/BrownwoolpatchItem.java",
+          "src/main/resources/assets/smp_mod_v/models/item/brownwoolpatch.json"
+        ]
+      }
+    },
+    {
+      "name": "Brownwoolpatchrecipe",
+      "type": "recipe",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brownwoolpatchrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/brownwoolpatchrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Browncloak",
+      "type": "armor",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "browncloak",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/smpmodv/item/BrowncloakItem.java",
+          "src/main/resources/assets/smp_mod_v/models/item/browncloak_helmet.json",
+          "src/main/resources/assets/smp_mod_v/models/item/browncloak_chestplate.json"
+        ]
+      }
+    },
+    {
+      "name": "Browncloakrecipe",
+      "type": "recipe",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "browncloakrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/browncloakrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Brownhoodrecipe",
+      "type": "recipe",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brownhoodrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/recipes/brownhoodrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Greenwoolpatch",
+      "type": "item",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greenwoolpatch",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/smp_mod_v/models/item/greenwoolpatch.json",
+          "src/main/java/net/mcreator/smpmodv/item/GreenwoolpatchItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Greenwoolpatchrecipe",
+      "type": "recipe",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "greenwoolpatchrecipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/smp_mod_v/recipes/greenwoolpatchrecipe.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.smp_mod_v.graycloak_leggings": "Whitecloak Leggings",
+      "item.smp_mod_v.titanium_tools_shovel": "Titanium_tools Shovel",
+      "item.smp_mod_v.titanium_tools_pickaxe": "Titanium_tools Pickaxe",
+      "gui.smp_mod_v.alchemytablegui.label_15": "15",
+      "block.smp_mod_v.alchemytable": "Alchemy table",
+      "entity.smp_mod_v.blssomcreature": "Blossom creature",
+      "item.smp_mod_v.copperarmorleft_boots": "Copperarmorright Boots",
+      "item.smp_mod_v.copperarmor_2arms_helmet": "Copperarmorright Helmet",
+      "item.smp_mod_v.lightgraycloak_helmet": "light gray hood",
+      "advancements.quest_2.descr": "bring 7 lush hermit crab scut to the brewer",
+      "item.smp_mod_v.coppercenterpiece_leggings": "Copper left leg",
+      "gui.smp_mod_v.alchemytablegui.label_24": "24",
+      "item.smp_mod_v.titaniumingot": "Titanium Ingot",
+      "advancements.quest_6.title": "Quest 6",
+      "item.smp_mod_v.graywoolpatch": "gray wool patch",
+      "item.smp_mod_v.titanium_armor_armor_helmet": "Titanium Helmet",
+      "item.smp_mod_v.browncloak_chestplate": "brown cloak",
+      "item.minecraft.potion.effect.crabmaster": "Potion of Crab master",
+      "block.smp_mod_v.titanium_block": "Block of Titanium",
+      "advancements.quest_1.title": "Quest 1:  find 5 amethyst shards",
+      "block.smp_mod_v.quest_4activator": "Quest 4 activator",
+      "item.smp_mod_v.copperarmorleft_leggings": "Copper left leg",
+      "gui.smp_mod_v.alchemytablegui.label_alchemy_table": "Alchemy Table",
+      "item.smp_mod_v.cagekey": "key",
+      "entity.smp_mod_v.lushhermitcrab": "Lush hermit crab",
+      "item.smp_mod_v.whitecloak_boots": "Whitecloak Boots",
+      "item.smp_mod_v.amethystnecklace_chestplate": "amethyst magic necklace",
+      "item.smp_mod_v.blackcloak_leggings": "Whitecloak Leggings",
+      "item.smp_mod_v.amethystblade": "Amethyst blade",
+      "item.smp_mod_v.lightgraywoolpatch": "light gray wool patch",
+      "advancements.quest.descr": "complete all the quest!",
+      "gui.smp_mod_v.alchemytablegui.label_32": "32",
+      "item.smp_mod_v.titanium_armor_armor_leggings": "Titanium Leggings",
+      "advancements.caves.title": "Caves",
+      "advancements.ancientruneaquired.title": "deep into the void",
+      "item.smp_mod_v.coppercenterpiece_chestplate": "Copper center chest piece",
+      "item.minecraft.lingering_potion.effect.crabmaster": "Lingering Potion of Crab master",
+      "block.smp_mod_v.quest_5activator": "Quest 5 activator",
+      "item.smp_mod_v.coppercenterpiece_helmet": "Copperarmorright Helmet",
+      "advancements.quest_7.title": "Quest 7",
+      "item.smp_mod_v.titanium": " Raw Titanium",
+      "advancements.quest_1.descr": "find 5 amethyst shard and bring them to the jeweler",
+      "advancements.quest_7.descr": "beat the goblin king in a fight",
+      "advancements.lushcave.title": "Lush cave",
+      "block.smp_mod_v.titanium_ore": "Titanium Ore",
+      "item.smp_mod_v.amethystnecklace_boots": "Amethystnecklace Boots",
+      "item.smp_mod_v.lushgoblinking_spawn_egg": "Lush goblin king Spawn Egg",
+      "item.smp_mod_v.brownwoolpatch": "brown wool patch",
+      "block.smp_mod_v.quest_7activator": "Quest 7 activator",
+      "item.smp_mod_v.coppernugget": "Copper nugget",
+      "item.smp_mod_v.lightgraycloak_leggings": "Whitecloak Leggings",
+      "item.smp_mod_v.whitewoolpatch": "White wool patch",
+      "item.smp_mod_v.copperarmorleft_chestplate": "Copper left arm",
+      "item.smp_mod_v.greenwoolpatch": "green wool patch",
+      "item.smp_mod_v.questeraser": "Questeraser",
+      "block.smp_mod_v.quest_2activator": "Quest 2 activator",
+      "advancements.tier_2questlush.descr": "you made it to tier 2! quest will now be more complex",
+      "item.smp_mod_v.coppercenterpiece_boots": "Copperarmorright Boots",
+      "item.smp_mod_v.titanium_tools_axe": "Titanium_tools Axe",
+      "item.minecraft.splash_potion.effect.crabmaster": "Splash Potion of Crab master",
+      "advancements.quest.title": "Quest",
+      "advancements.dripstonecave.title": "dripstone cave",
+      "item.smp_mod_v.amethystnecklace_leggings": "Amethystnecklace Leggings",
+      "advancements.ancientruneaquired.descr": "find an ancient rune",
+      "advancements.quest_8.descr": "free the goblins from the cage",
+      "advancements.stonecave.descr": "stone cave quest",
+      "advancements.caves.descr": "20+ quest in the caves",
+      "item.smp_mod_v.whitecloak_helmet": "white hood",
+      "advancements.quest_2.title": "Quest 2: gather 7 lush hermit crab scut",
+      "item.smp_mod_v.titanium_tools_sword": "Titanium_tools Sword",
+      "advancements.tier_2questlush.title": "Tier 2 quests",
+      "item.smp_mod_v.titanium_armor_armor_chestplate": "Titanium Chestplate",
+      "item.smp_mod_v.blackcloak_helmet": "black hood",
+      "advancements.quest_6.descr": "find 28 tropical fish and bring them to the farmer",
+      "item.smp_mod_v.blackcloak_boots": "Whitecloak Boots",
+      "item.smp_mod_v.browncloak_leggings": "Whitecloak Leggings",
+      "item.smp_mod_v.copperarmorright_chestplate": "Copper right arm",
+      "item.smp_mod_v.graycloak_helmet": "gray hood",
+      "item.smp_mod_v.copperarmor_2arms_chestplate": "Copper arms",
+      "item.smp_mod_v.amethystdust": "Amethyst dust",
+      "item.smp_mod_v.ancientrune": "Ancient Rune",
+      "gui.smp_mod_v.alchemytablegui.label_8": "8",
+      "advancements.quest_8.title": "Quest 8",
+      "block.smp_mod_v.quest_1activator": "Quest 1activator",
+      "block.smp_mod_v.emptyjarblock": "Empty jar",
+      "gui.smp_mod_v.alchemytablegui.label_4": "4",
+      "item.minecraft.tipped_arrow.effect.crabmaster": "Arrow of Crab master",
+      "gui.smp_mod_v.alchemytablegui.label_6": "6",
+      "item.smp_mod_v.coppercore": "Copper core",
+      "advancements.dripstonecave.descr": "dripstone cave quest",
+      "advancements.quest_3.descr": "bring 32 glow berries tp the barman",
+      "item.smp_mod_v.titanium_tools_hoe": "Titanium_tools Hoe",
+      "gui.smp_mod_v.alchemytablegui.label_2": "2",
+      "item.smp_mod_v.blackwoolpatch": "black wool patch",
+      "item.smp_mod_v.blssomcreature_spawn_egg": "Blossom creature Spawn Egg",
+      "item.smp_mod_v.glowberriejuice": "Glow berry juice",
+      "item.smp_mod_v.copperarmorright_leggings": "Copper right leg",
+      "block.smp_mod_v.squeezer": "Squeezer",
+      "item.smp_mod_v.coppergear": "Copper gear",
+      "block.smp_mod_v.rawtitaniumblock": "Raw Titanium Block",
+      "block.smp_mod_v.glowberryjar": "Glowberryjar",
+      "advancements.stonecave.title": "stone cave",
+      "item.smp_mod_v.magicalcropgrower": "Magicalcropgrower",
+      "item.smp_mod_v.graycloak_chestplate": "gray cloak",
+      "advancements.quest_5.title": "Quest 5",
+      "advancements.quest_4.descr": "bring back the treasure to the traveler",
+      "item.smp_mod_v.copperarmor_leggings": "Copper Leggings",
+      "item.smp_mod_v.amethystnecklace_helmet": "Amethystnecklace Helmet",
+      "block.smp_mod_v.quest_3activator": "Quest 3 activator",
+      "item.smp_mod_v.copperarmorleft_helmet": "Copperarmorright Helmet",
+      "block.smp_mod_v.quest_6activator": "Quest 6 activator",
+      "item.smp_mod_v.copperarmor_chestplate": "Copper chestplate",
+      "item.smp_mod_v.lightgraycloak_chestplate": "light gray cloak",
+      "advancements.quest_4.title": "Quest 4",
+      "block.smp_mod_v.deepslatetitaniumore": "Deepslate Titanium Ore",
+      "item.smp_mod_v.amethystswordhandle": "Amethyst sword handle",
+      "item.smp_mod_v.titanium_armor_armor_boots": "Titanium Boots",
+      "item.smp_mod_v.graycloak_boots": "Whitecloak Boots",
+      "advancements.lushcave.descr": "lush cave quest",
+      "entity.smp_mod_v.lushgoblin": "Lushgoblin",
+      "item.smp_mod_v.whitecloak_chestplate": "White cloak",
+      "item.smp_mod_v.hermitcrabscut": "Hermit crab scut",
+      "effect.smp_mod_v.crabmastereffect": "crab master",
+      "entity.smp_mod_v.lushgoblinking": "Lush goblin king",
+      "block.smp_mod_v.snaildensign": "Snail den sign",
+      "item.smp_mod_v.copperarmor_2arms_boots": "Copperarmorright Boots",
+      "item.smp_mod_v.almethystsword": "Amethyst sword",
+      "item.smp_mod_v.copperarmor_boots": "Copperarmor Boots",
+      "advancements.quest_5.descr": "bring 5 titanium ingot to the tool smith",
+      "item.smp_mod_v.copperarmor_2arms_leggings": "Copper left leg",
+      "item.smp_mod_v.browncloak_boots": "Whitecloak Boots",
+      "advancements.quest_3.title": "Quest 3",
+      "item.smp_mod_v.lightgraycloak_boots": "Whitecloak Boots",
+      "item.smp_mod_v.blackcloak_chestplate": "black cloak",
+      "item.smp_mod_v.lushgoblin_spawn_egg": "Lushgoblin Spawn Egg",
+      "item.smp_mod_v.browncloak_helmet": "brown hood",
+      "gui.smp_mod_v.alchemytablegui.label_10": "10",
+      "gui.smp_mod_v.squeezer_gui.label_berry_squeezer": "Fruit Squeezer",
+      "item.smp_mod_v.copperarmorright_helmet": "Copperarmorright Helmet",
+      "item.smp_mod_v.whitecloak_leggings": "Whitecloak Leggings",
+      "item.smp_mod_v.copperarmorright_boots": "Copperarmorright Boots",
+      "item.smp_mod_v.lushhermitcrab_spawn_egg": "Lush hermit crab Spawn Egg",
+      "block.smp_mod_v.quest_8activator": "Quest 8 activator",
+      "item.smp_mod_v.copperarmor_helmet": "Copper Helmet"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "lush_cave",
+        "children": [
+          {
+            "name": "procedures",
+            "children": []
+          },
+          {
+            "name": "entity",
+            "children": []
+          },
+          {
+            "name": "advancements",
+            "children": []
+          },
+          {
+            "name": "recipes",
+            "children": []
+          },
+          {
+            "name": "blocks",
+            "children": []
+          },
+          {
+            "name": "items",
+            "children": []
+          },
+          {
+            "name": "armors",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "smp_mod_v",
+    "modName": "smp_mod_v2",
+    "version": "1.0.0",
+    "author": "gabri, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.smpmodv",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300110610
+}

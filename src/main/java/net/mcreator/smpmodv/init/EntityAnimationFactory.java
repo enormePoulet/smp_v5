@@ -5,6 +5,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
 import net.mcreator.smpmodv.entity.LushhermitcrabEntity;
+import net.mcreator.smpmodv.entity.LushgoblinkingEntity;
 import net.mcreator.smpmodv.entity.LushgoblinEntity;
 import net.mcreator.smpmodv.entity.BlssomcreatureEntity;
 
@@ -28,6 +29,13 @@ public class EntityAnimationFactory {
 				}
 			}
 			if (event.getEntity() instanceof LushgoblinEntity syncable) {
+				String animation = syncable.getSyncedAnimation();
+				if (!animation.equals("undefined")) {
+					syncable.setAnimation("undefined");
+					syncable.animationprocedure = animation;
+				}
+			}
+			if (event.getEntity() instanceof LushgoblinkingEntity syncable) {
 				String animation = syncable.getSyncedAnimation();
 				if (!animation.equals("undefined")) {
 					syncable.setAnimation("undefined");

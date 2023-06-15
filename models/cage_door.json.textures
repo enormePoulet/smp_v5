@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "3": "cage_door"
+      },
+      "name": "default"
+    }
+  }
+}

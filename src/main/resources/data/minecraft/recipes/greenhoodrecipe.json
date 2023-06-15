@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "smp_mod_v:greenwoolpatch"
+    },
+    "1": {
+      "item": "smp_mod_v:greenwoolpatch"
+    },
+    "2": {
+      "item": "smp_mod_v:greenwoolpatch"
+    },
+    "3": {
+      "item": "smp_mod_v:greenwoolpatch"
+    },
+    "5": {
+      "item": "smp_mod_v:greenwoolpatch"
+    }
+  },
+  "result": {
+    "item": "smp_mod_v:greencloak_helmet",
+    "count": 1
+  }
+}

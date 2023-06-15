@@ -65,5 +65,71 @@ public class RecipeunlockerProcedure {
 			if (entity instanceof ServerPlayer _serverPlayer)
 				_serverPlayer.server.getRecipeManager().byKey(new ResourceLocation("minecraft:cropgrowerrecipe")).ifPresent(_rec -> _serverPlayer.resetRecipes(Collections.singleton(_rec)));
 		}
+		if (entity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel ? _plr.getAdvancements().getOrStartProgress(_plr.server.getAdvancements().getAdvancement(new ResourceLocation("smp_mod_v:quest_7"))).isDone() : false) {
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("minecraft:amethystswordrecipe")});
+		} else {
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.server.getRecipeManager().byKey(new ResourceLocation("minecraft:amethystswordrecipe")).ifPresent(_rec -> _serverPlayer.resetRecipes(Collections.singleton(_rec)));
+		}
+		if (entity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel ? _plr.getAdvancements().getOrStartProgress(_plr.server.getAdvancements().getAdvancement(new ResourceLocation("smp_mod_v:quest_8"))).isDone() : false) {
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("minecraft:whitehoodrecipe")});
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("minecraft:whitecloakrecipe")});
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("minecraft:lightgrayhoodrecipe")});
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("minecraft:lightgraycloakrecipe")});
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("minecraft:grayhoodrecipe")});
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("minecraft:graycloakrecipe")});
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("minecraft:blackhoodrecipe")});
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("minecraft:blackcloakrecipe")});
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("minecraft:browncloakrecipe")});
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("minecraft:brownhoodrecipe")});
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("minecraft:greencloakrecipe")});
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("minecraft:greenhoodrecipe")});
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("minecraft:limecloakrecipe")});
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.awardRecipesByKey(new ResourceLocation[]{new ResourceLocation("minecraft:limehoodrecipe")});
+		} else {
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.server.getRecipeManager().byKey(new ResourceLocation("minecraft:whitehoodrecipe")).ifPresent(_rec -> _serverPlayer.resetRecipes(Collections.singleton(_rec)));
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.server.getRecipeManager().byKey(new ResourceLocation("minecraft:whitecloakrecipe")).ifPresent(_rec -> _serverPlayer.resetRecipes(Collections.singleton(_rec)));
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.server.getRecipeManager().byKey(new ResourceLocation("minecraft:lightgrayhoodrecipe")).ifPresent(_rec -> _serverPlayer.resetRecipes(Collections.singleton(_rec)));
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.server.getRecipeManager().byKey(new ResourceLocation("minecraft:lightgraycloakrecipe")).ifPresent(_rec -> _serverPlayer.resetRecipes(Collections.singleton(_rec)));
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.server.getRecipeManager().byKey(new ResourceLocation("minecraft:grayhoodrecipe")).ifPresent(_rec -> _serverPlayer.resetRecipes(Collections.singleton(_rec)));
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.server.getRecipeManager().byKey(new ResourceLocation("minecraft:graycloakrecipe")).ifPresent(_rec -> _serverPlayer.resetRecipes(Collections.singleton(_rec)));
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.server.getRecipeManager().byKey(new ResourceLocation("minecraft:blackhoodrecipe")).ifPresent(_rec -> _serverPlayer.resetRecipes(Collections.singleton(_rec)));
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.server.getRecipeManager().byKey(new ResourceLocation("minecraft:blackcloakrecipe")).ifPresent(_rec -> _serverPlayer.resetRecipes(Collections.singleton(_rec)));
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.server.getRecipeManager().byKey(new ResourceLocation("minecraft:browncloakrecipe")).ifPresent(_rec -> _serverPlayer.resetRecipes(Collections.singleton(_rec)));
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.server.getRecipeManager().byKey(new ResourceLocation("minecraft:brownhoodrecipe")).ifPresent(_rec -> _serverPlayer.resetRecipes(Collections.singleton(_rec)));
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.server.getRecipeManager().byKey(new ResourceLocation("minecraft:greencloakrecipe")).ifPresent(_rec -> _serverPlayer.resetRecipes(Collections.singleton(_rec)));
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.server.getRecipeManager().byKey(new ResourceLocation("minecraft:greenhoodrecipe")).ifPresent(_rec -> _serverPlayer.resetRecipes(Collections.singleton(_rec)));
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.server.getRecipeManager().byKey(new ResourceLocation("minecraft:limecloakrecipe")).ifPresent(_rec -> _serverPlayer.resetRecipes(Collections.singleton(_rec)));
+			if (entity instanceof ServerPlayer _serverPlayer)
+				_serverPlayer.server.getRecipeManager().byKey(new ResourceLocation("minecraft:limehoodrecipe")).ifPresent(_rec -> _serverPlayer.resetRecipes(Collections.singleton(_rec)));
+		}
 	}
 }

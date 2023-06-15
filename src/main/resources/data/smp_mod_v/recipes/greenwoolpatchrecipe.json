@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1",
+    "23"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:paper"
+    },
+    "2": {
+      "item": "minecraft:green_wool"
+    },
+    "3": {
+      "item": "minecraft:green_wool"
+    }
+  },
+  "result": {
+    "item": "smp_mod_v:greenwoolpatch",
+    "count": 2
+  }
+}
